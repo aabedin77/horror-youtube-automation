@@ -1,4 +1,4 @@
-name: Horror Channel Automation
+name: Hindi Horror Script Generator
 
 on:
   workflow_dispatch:
@@ -6,16 +6,105 @@ on:
     - cron: "30 3 * * *"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  test:
+  generate-script:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Start automation
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Hindi horror script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          echo "Hindi Horror Automation Started"
-          echo "Checking daily workflow..."
-          date -u
-          echo "Workflow test completed!"￼Enter
+          python - <<'PY'
+          import os
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key:
+              raise SystemExit("GEMINI_API_KEY secret is missing")
+
+          prompt = """
+          Write one original Hindi horror story for YouTube.
+          Language: Hindi in Devanagari.
+          Target duration: 5-7 minutes.
+          Start with a strong hook.
+          Include suspense, cinematic scenes, and a satisfying twist.
+          Output only the story, with an appropriate Hindi title.
+          Avoid presenting dangerous real-world instructions as advice.
+          """
+
+          url = (
+              "https://generativelanguage.googleapis.com/v1beta/"
+              "models/gemini-2.5-flash:generateContent"
+              "?key=" + api_key
+          )
+
+          payload = {
+              "contents": [{
+                  "parts": [{"text": prompt}]
+              }]
+          }
+
+          request = urllib.request.Request(
+              url,
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json"},
+              method="POST"
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=120) as response:
+                  result = json.loads(response.read().decode("utf-8"))
+          except Exception as error:
+              raise SystemExit(
+                  f"Gemini request failed: {error}"
+              )
+
+          candidates = result.get("candidates", [])
+          if not candidates:
+              raise SystemExit(
+                  "Gemini returned no script. Check API access and quota."
+              )
+
+          parts = candidates[0].get("content", {}).get("parts", [])
+          script = "\n".join(
+              part.get("text", "") for part in parts
+          ).strip()
+
+          if not script:
+              raise SystemExit("Gemini returned empty text")
+
+          os.makedirs("scripts", exist_ok=True)
+          filename = datetime.now(timezone.utc).strftime(
+              "scripts/horror-%Y-%m-%d.md"
+          )
+
+          with open(filename, "w", encoding="utf-8") as file:
+              file.write(script + "\n")
+
+          print(f"Script saved: {filename}")
+          PY
+
+      - name: Save script to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/
+          if git diff --cached --quiet; then
+            echo "No new changes to commit"
+          else
+            git commit -m "Generate daily Hindi horror script"
+            git push
+          fi
