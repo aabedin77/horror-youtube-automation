@@ -1,0 +1,21 @@
+name: Horror Channel Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 3 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start automation
+        run: |
+          echo "Hindi Horror Automation Started"
+          echo "Checking daily workflow..."
+          date -u
+          echo "Workflow test completed!"￼Enter
