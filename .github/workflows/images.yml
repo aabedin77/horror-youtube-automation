@@ -74,7 +74,6 @@ jobs:
                   skipped += 1
                   continue
 
-              # simpler fallback prompt: style + scene only (drops character)
               scene_part = sc["image_prompt"].split("Scene:", 1)[-1].strip()
               attempts = [sc["image_prompt"], sc["image_prompt"],
                           STYLE + scene_part]
@@ -143,5 +142,6 @@ jobs:
           git add images/ || true
           if ! git diff --cached --quiet; then
             git commit -m "Add scene images (test)"
+            git pull --rebase || true
             git push
-          fi￼Enter
+          fi
