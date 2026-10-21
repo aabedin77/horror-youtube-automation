@@ -1,4 +1,4 @@
-name: Test Image Generation
+name: Test Cloudflare Image
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  test-image:
+  test-cf:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
 
@@ -15,55 +15,61 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Try one image
+      - name: Generate 2 test images
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: |
           python3 - <<'PY'
           import os, json, base64, urllib.request, urllib.error
 
-          key = os.environ["GEMINI_API_KEY"]
-          model = "gemini-2.5-flash-image"
-          url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-                 + model + ":generateContent")
+          acct = os.environ["CF_ACCOUNT_ID"].strip()
+          token = os.environ["CF_API_TOKEN"].strip()
+          model = "@cf/black-forest-labs/flux-1-schnell"
+          url = ("https://api.cloudflare.com/client/v4/accounts/"
+                 + acct + "/ai/run/" + model)
 
-          prompt = ("2D animated cartoon style horror scene, 16:9 widescreen: "
-                    "an abandoned old haveli at night, full moon, thick fog, "
-                    "one glowing window, dark blue and purple colors, "
-                    "no text, no watermark.")
+          style = ("2D animated cartoon style, dark horror atmosphere, "
+                   "dark blue and purple colors, flat colors with bold outlines, "
+                   "widescreen cinematic composition, no text, no letters, "
+                   "no watermark. ")
+          prompts = [
+              style + "An abandoned old Indian haveli at night, full moon, "
+                      "thick fog, one glowing yellow window.",
+              style + "A frightened village boy holding a lantern, "
+                      "standing in a dark narrow lane, a tall shadow "
+                      "figure behind him.",
+          ]
 
-          payload = {
-              "contents": [{"parts": [{"text": prompt}]}],
-              "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]},
-          }
-          req = urllib.request.Request(
-              url,
-              data=json.dumps(payload).encode(),
-              headers={"Content-Type": "application/json",
-                       "x-goog-api-key": key},
-          )
+          lines = ["## Cloudflare image test", f"- Model: {model}"]
+          os.makedirs("test", exist_ok=True)
 
-          lines = ["## Image test", f"- Model: {model}"]
-          ok = False
-          try:
-              with urllib.request.urlopen(req, timeout=180) as r:
-                  data = json.loads(r.read())
-              for p in data["candidates"][0]["content"]["parts"]:
-                  blob = p.get("inlineData") or p.get("inline_data")
-                  if blob:
-                      os.makedirs("test", exist_ok=True)
-                      with open("test/test-image.png", "wb") as f:
-                          f.write(base64.b64decode(blob["data"]))
-                      ok = True
-              lines.append("- Result: IMAGE SAVED" if ok
-                           else "- Result: no image in response")
-              if not ok:
-                  lines.append("- Response: " + json.dumps(data)[:600])
-          except urllib.error.HTTPError as e:
-              lines.append(f"- Result: HTTP ERROR {e.code}")
-              lines.append("- Message: " + e.read().decode()[:600])
-          except Exception as e:
-              lines.append("- Result: ERROR " + repr(e))
+          for i, p in enumerate(prompts, 1):
+              payload = {"prompt": p, "steps": 4}
+              req = urllib.request.Request(
+                  url,
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      "Content-Type": "application/json",
+                      "Authorization": "Bearer " + token,
+                      "User-Agent": "horror-automation/1.0",
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=120) as r:
+                      data = json.loads(r.read())
+                  b64 = data["result"]["image"]
+                  raw = base64.b64decode(b64)
+                  ext = "jpg" if raw[:2] == b"\xff\xd8" else "png"
+                  path = f"test/cf-{i}.{ext}"
+                  with open(path, "wb") as f:
+                      f.write(raw)
+                  lines.append(f"- Image {i}: SAVED {path} ({len(raw)//1024} KB)")
+              except urllib.error.HTTPError as e:
+                  lines.append(f"- Image {i}: HTTP ERROR {e.code}")
+                  lines.append("  " + e.read().decode()[:500])
+              except Exception as e:
+                  lines.append(f"- Image {i}: ERROR {repr(e)[:300]}")
 
           report = "\n".join(lines) + "\n"
           print(report)
@@ -71,12 +77,12 @@ jobs:
               f.write(report)
           PY
 
-      - name: Save test image
+      - name: Save test images
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add test/ || true
           if ! git diff --cached --quiet; then
-            git commit -m "Add image test"
+            git commit -m "Add Cloudflare image test"
             git push
           fi
