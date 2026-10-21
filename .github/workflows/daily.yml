@@ -1,4 +1,4 @@
-name: Hindi Horror Script Generator
+name: Hindi Horror Script and Voice
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-script:
+  create-content:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,90 +21,76 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate Hindi horror script
+      - name: Install free TTS
+        run: pip install edge-tts
+
+      - name: Generate script and voice
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python - <<'PY'
-          import os
-          import json
-          import urllib.request
+          import os, json, urllib.request, asyncio
           from datetime import datetime, timezone
+          import edge_tts
 
-          api_key = os.environ.get("GEMINI_API_KEY")
-          if not api_key:
-              raise SystemExit("GEMINI_API_KEY secret is missing")
+          key = os.environ["GEMINI_API_KEY"]
+          date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
           prompt = """
-          Write one original Hindi horror story for YouTube.
-          Language: Hindi in Devanagari.
-          Target duration: 5-7 minutes.
-          Start with a strong hook.
-          Include suspense, cinematic scenes, and a satisfying twist.
-          Output only the story, with an appropriate Hindi title.
-          Avoid presenting dangerous real-world instructions as advice.
+          Write an original Hindi horror story in Devanagari
+          for a YouTube video, about 5 minutes long.
+          Start with a strong hook, build suspense, and end
+          with an unexpected twist. Output only the story.
           """
 
           url = (
               "https://generativelanguage.googleapis.com/v1beta/"
-              "models/gemini-2.5-flash:generateContent"
-              "?key=" + api_key
+              "models/gemini-2.5-flash:generateContent?key=" + key
           )
 
           payload = {
-              "contents": [{
-                  "parts": [{"text": prompt}]
-              }]
+              "contents": [{"parts": [{"text": prompt}]}]
           }
 
-          request = urllib.request.Request(
+          req = urllib.request.Request(
               url,
-              data=json.dumps(payload).encode("utf-8"),
-              headers={"Content-Type": "application/json"},
-              method="POST"
+              data=json.dumps(payload).encode(),
+              headers={"Content-Type": "application/json"}
           )
 
-          try:
-              with urllib.request.urlopen(request, timeout=120) as response:
-                  result = json.loads(response.read().decode("utf-8"))
-          except Exception as error:
-              raise SystemExit(
-                  f"Gemini request failed: {error}"
-              )
+          with urllib.request.urlopen(req, timeout=120) as response:
+              data = json.loads(response.read())
 
-          candidates = result.get("candidates", [])
-          if not candidates:
-              raise SystemExit(
-                  "Gemini returned no script. Check API access and quota."
-              )
-
-          parts = candidates[0].get("content", {}).get("parts", [])
           script = "\n".join(
-              part.get("text", "") for part in parts
+              p["text"]
+              for p in data["candidates"][0]["content"]["parts"]
+              if "text" in p
           ).strip()
 
-          if not script:
-              raise SystemExit("Gemini returned empty text")
-
           os.makedirs("scripts", exist_ok=True)
-          filename = datetime.now(timezone.utc).strftime(
-              "scripts/horror-%Y-%m-%d.md"
-          )
+          os.makedirs("audio", exist_ok=True)
 
-          with open(filename, "w", encoding="utf-8") as file:
-              file.write(script + "\n")
+          with open(f"scripts/horror-{date}.md", "w", encoding="utf-8") as f:
+              f.write(script)
 
-          print(f"Script saved: {filename}")
+          async def make_audio():
+              voice = edge_tts.Communicate(
+                  script,
+                  voice="hi-IN-SwaraNeural",
+                  rate="-5%"
+              )
+              await voice.save(f"audio/horror-{date}.mp3")
+
+          asyncio.run(make_audio())
+          print("Hindi script and voice-over generated!")
           PY
 
-      - name: Save script to repository
+      - name: Save content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/
-          if git diff --cached --quiet; then
-            echo "No new changes to commit"
-          else
-            git commit -m "Generate daily Hindi horror script"
+          git add scripts/ audio/
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate Hindi horror script and voice-over"
             git push
           fi
