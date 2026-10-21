@@ -1,0 +1,198 @@
+{
+  "title": "अंतिम मंज़िल",
+  "date": "2026-10-21",
+  "scenes": [
+    {
+      "id": 1,
+      "text": "रवि ने शहर की भीड़-भाड़ से दूर, उस पुराने बंगले की ओर देखा, जिसकी परछाईं शाम के ढलते सूरज में और भी गहरी हो रही थी। एक अजीब सी खामोशी उस जगह को घेरे हुए थी, इतनी गहरी कि हवा की सरसराहट भी मानो दब जाती थी।",
+      "words": 47,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Wide shot of an old, decaying Indian village bungalow at dusk. The building casts a long, dark shadow. The air is still, creating an eerie silence. The setting sun bathes the scene in an orange glow, highlighting the bungalow's ominous presence."
+    },
+    {
+      "id": 2,
+      "text": "उसे लगा, जैसे यह खामोशी सिर्फ़ आवाज़ों का अभाव नहीं, बल्कि किसी अनदेखी उपस्थिति का बोझ है। एक लेखक होने के नाते, उसे प्रेरणा के लिए एकांत की तलाश थी, और इसलिए उसने यह जर्जर लेकिन विशाल बंगला किराए पर लिया था।",
+      "words": 42,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's face, his eyes wide with a mix of apprehension and intrigue. He stands before the bungalow, a sense of unseen presence weighing on him. His writer's bag is slung over his shoulder, a stark contrast to the desolate surroundings."
+    },
+    {
+      "id": 3,
+      "text": "मालिक ने चेतावनी दी थी कि यह थोड़ा पुराना है, पर रवि को लगा था कि यही इसकी खासियत है। लेकिन उस दिन, पहले ही कदम पर, उसे अपने फैसले पर संदेह होने लगा।",
+      "words": 34,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi's silhouette against the bungalow's entrance, a faint flicker of doubt crossing his posture. The doorway appears as a dark void, hinting at the unknown within. The overall mood is tense and foreboding."
+    },
+    {
+      "id": 4,
+      "text": "अंदर का माहौल बाहर से भी ज़्यादा शांत था। धूल की हल्की परत हर चीज़ पर जमी थी, मानो यह जगह बरसों से किसी के स्पर्श से वंचित रही हो। रवि ने अपना सामान रखा और धीरे-धीरे घर का मुआयना करने लगा।",
+      "words": 42,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Interior shot of a dusty, silent room in the bungalow. Shafts of light pierce through grimy windows, illuminating motes of dust dancing in the air. Ravi places his luggage down, his figure small amidst the vast emptiness."
+    },
+    {
+      "id": 5,
+      "text": "नीचे के कमरे, रसोई और एक छोटा बगीचा, सब कुछ उसकी उम्मीद से ज़्यादा बड़ा और ख़ाली था। जैसे-जैसे वह ऊपर की मंज़िल की ओर बढ़ा, सीढ़ियों से उठती चरमराती आवाज़ों ने उस खामोशी को और गहरा कर दिया।",
+      "words": 39,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi slowly ascends a creaking wooden staircase. Close-up on his feet as the old wood groans under his weight, amplifying the oppressive silence of the house. The shadows stretch long and distorted on the walls."
+    },
+    {
+      "id": 6,
+      "text": "ऊपर दो बेडरूम थे और एक छोटा सा गलियारा। लेकिन गलियारे के अंत में, उसने एक और दरवाज़ा देखा। यह अन्य दरवाज़ों से अलग था। यह भारी, पुराना और जंग लगे ताले से बंद था।",
+      "words": 35,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi stands at the end of a dimly lit corridor upstairs. He gazes at a heavy, old, locked wooden door, distinct from the others. Rust covers the padlock, creating a sense of ancient confinement."
+    },
+    {
+      "id": 7,
+      "text": "दरवाज़े की लकड़ी पर गहरे निशान थे, जैसे किसी ने उसे खोलने की बेताब कोशिश की हो। रवि ने उस पर हाथ रखा, तो उसे ठंडक महसूस हुई, एक ऐसी ठंडक जो मौसम की नहीं थी।",
+      "words": 36,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's hand as he touches the cold, rough surface of the locked door. The texture of the wood is visibly aged, with deep, desperate-looking scratch marks. A shiver runs down his arm."
+    },
+    {
+      "id": 8,
+      "text": "उसने मालिक को फ़ोन किया और उस बंद कमरे के बारे में पूछा। मालिक का स्वर अचानक बदल गया, \"अरे, वह तो बस एक पुराना स्टोररूम है, सालों से बंद पड़ा है।",
+      "words": 32,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi holds an old-fashioned phone to his ear, his expression a mix of confusion and suspicion. The background shows the indistinct, shadowed interior of the bungalow, emphasizing his isolation."
+    },
+    {
+      "id": 9,
+      "text": "उसमें कुछ ख़ास नहीं है, आप उसे छोड़ दीजिए।\" मालिक की हिचकिचाहट और जल्दबाज़ी ने रवि की उत्सुकता को और बढ़ा दिया। अगले कुछ दिनों तक, रवि ने लेखन का काम शुरू करने की कोशिश की, पर उसका मन बार-बार उस बंद कमरे की ओर खिंच जाता।",
+      "words": 47,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi sits at a desk, a pen poised over a notebook, but his gaze is fixed on the distant, closed door down the corridor. His mind is clearly elsewhere, consumed by the mystery of the locked room."
+    },
+    {
+      "id": 10,
+      "text": "रात में, जब पूरा बंगला गहरी नींद में होता, तो उसे कभी-कभी उस कमरे की दिशा से फुसफुसाहट सुनाई देती। कभी दरवाज़े के पास से हल्की सी खड़खड़ाहट की आवाज़ आती, जैसे कोई अंदर से उसे खोलने की कोशिश कर रहा हो।",
+      "words": 42,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Night scene. A wide shot of the dark, silent corridor. A faint, almost imperceptible whisper seems to emanate from the locked door. Shadows deepen, suggesting unseen movements."
+    },
+    {
+      "id": 11,
+      "text": "एक बार तो उसे हल्की रोशनी का भ्रम भी हुआ, जैसे कोई दिया उस बंद कमरे के भीतर जल रहा हो। उसने अपनी टॉर्च उठाई और दरवाज़े के पास गया, पर वहाँ सिर्फ़ गहरा अंधेरा और वही डरावनी खामोशी थी।",
+      "words": 40,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi holds a flashlight, its beam cutting through the oppressive darkness towards the locked door. He peers intently, a flicker of light momentarily appearing and disappearing from the keyhole, a trick of his mind."
+    },
+    {
+      "id": 12,
+      "text": "रवि ने अपने कुछ पुराने दोस्तों से घर के इतिहास के बारे में पता लगाने की कोशिश की। जो जानकारी मिली, वह अस्पष्ट और खंडित थी। कुछ लोगों ने बताया कि कई साल पहले इस घर में एक परिवार रहता था, जो अचानक एक रात गायब हो गया था।",
+      "words": 49,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi looks intensely at an old, faded photograph or newspaper clipping, his brow furrowed in concentration. The images are blurry, hinting at a forgotten past and increasing his unease."
+    },
+    {
+      "id": 13,
+      "text": "कोई निशान नहीं मिला, कोई सामान नहीं उठा। बस खाली घर छोड़ गए। अफवाहें थीं कि घर में कुछ 'अजीब' था, लेकिन किसी ने कभी खुलकर कुछ नहीं कहा। यह सब रवि की बेचैनी को बढ़ा रहा था।",
+      "words": 38,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's restless face in bed, eyes open in the dark. He's clearly distressed, unable to sleep, haunted by the house's history. Shadows play across his features, enhancing his anxiety."
+    },
+    {
+      "id": 14,
+      "text": "उसे रात में अजीब सपने आने लगे। कभी वह खुद को उस बंद कमरे के अंदर पाता, एक अंधेरी कोठरी में, जहाँ से बाहर निकलने का कोई रास्ता नहीं था। कभी उसे एक धुंधली परछाईं दिखती, जो उससे कुछ कहने की कोशिश करती, पर उसकी आवाज़ हमेशा गुम हो जाती।",
+      "words": 50,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Dream sequence. Ravi is trapped in a dark, confined space. His face is distorted with fear as he frantically searches for an exit. A blurry, indistinct figure looms in the background, just out of focus."
+    },
+    {
+      "id": 15,
+      "text": "धीरे-धीरे, रवि का सारा ध्यान अपने लेखन से हटकर उस बंद कमरे पर केंद्रित हो गया। उसे लगा, जैसे कमरे के भीतर से कोई उसे बुला रहा है, कोई उसे अपनी ओर खींच रहा है।",
+      "words": 35,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi stands in the corridor, completely fixated on the locked door. His posture suggests an irresistible pull, as if an unseen force is drawing him closer. The atmosphere is heavy with anticipation."
+    },
+    {
+      "id": 16,
+      "text": "उसने कई बार उस ताले को तोड़ने की कोशिश की, पर वह इतना मज़बूत और पुराना था कि उसके सभी प्रयास व्यर्थ रहे। एक दोपहर, जब वह किताबों की पुरानी अलमारी साफ़ कर रहा था, जो बंगले के मालिक ने उसे इस्तेमाल करने की अनुमति दी थी, उसे एक मोटी किताब के पीछे कुछ चमकता हुआ दिखा।",
+      "words": 57,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi rummages through an old, dusty bookshelf. Sunlight streams through a window, illuminating the dust particles. His expression is determined, searching for something specific among the forgotten books."
+    },
+    {
+      "id": 17,
+      "text": "वह एक पुरानी, जंग लगी चाबी थी, बिल्कुल उस ताले जैसी, जो बंद कमरे के दरवाज़े पर लगा था। उसके दिल की धड़कनें तेज़ हो गईं। यह कोई संयोग नहीं हो सकता था।",
+      "words": 33,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's hand as he pulls a tarnished, rusty key from behind a book. His eyes widen in surprise and recognition. The key gleams faintly, a beacon of discovery."
+    },
+    {
+      "id": 18,
+      "text": "यह वही चाबी थी जिसकी उसे तलाश थी। चाबी हाथ में आते ही, उसे लगा जैसे कमरे का तापमान अचानक कई डिग्री गिर गया हो। हवा में एक अजीब सी गंध फैल गई, जैसे पुरानी धूल, सड़ी हुई लकड़ी और कुछ और, जिसे वह पहचान नहीं पाया।",
+      "words": 47,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi holds the key, his body visibly shivering despite the lack of external cold. The air around him seems to ripple, and a strange, unidentifiable scent fills the space, intensifying the eerie mood."
+    },
+    {
+      "id": 19,
+      "text": "उसका शरीर काँप रहा था, पर एक अदृश्य शक्ति उसे उस कमरे की ओर धकेल रही थी। उसके दिमाग में एक ही विचार गूंज रहा था: 'खोलना है, मुझे इसे खोलना है।' वह धीरे-धीरे सीढ़ियाँ चढ़ा, उसके हर कदम पर पुरानी लकड़ी कराह रही थी।",
+      "words": 45,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi slowly ascends the creaking stairs, each step deliberate and heavy. His face is a mask of grim determination mixed with dread, as if compelled by an unseen force towards the locked door."
+    },
+    {
+      "id": 20,
+      "text": "गलियारे में पहुँचकर, उसने चाबी को ताले में डाला। एक धीमी, कर्कश आवाज़ के साथ ताला खुला। ताले की आवाज़ इतनी भयानक थी कि पूरे घर में गूंज उठी, जैसे कोई पुरानी आत्मा बंधन से मुक्त हो रही हो।",
+      "words": 39,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on the rusty padlock as Ravi inserts the key. A slow, agonizing creak echoes through the silent house, a sound of ancient release. The padlock clicks open with a chilling finality."
+    },
+    {
+      "id": 21,
+      "text": "रवि ने दरवाज़े को धीरे से धकेला। एक भयानक सन्नाटा और अंधेरा उसके सामने फैल गया। कमरे के भीतर से एक तेज़, ठंडी हवा का झोंका आया, जिसने उसके रोंगटे खड़े कर दिए।",
+      "words": 33,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi cautiously pushes the door open. A blast of cold, stale air rushes out, making his hair stand on end. Beyond the threshold, only oppressive darkness is visible, hinting at an empty void."
+    },
+    {
+      "id": 22,
+      "text": "कमरे में धूल की मोटी परत बिछी थी, और हवा में घुटन थी। उसने अपनी टॉर्च जलाई और भीतर कदम रखा। कमरा पूरी तरह से खाली था, केवल दीवारों पर कुछ अजीबोगरीब निशान थे।",
+      "words": 34,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Interior shot of the newly opened room, shrouded in thick dust. Ravi steps inside, his flashlight beam cutting through the gloom, revealing only bare walls and a suffocating atmosphere."
+    },
+    {
+      "id": 23,
+      "text": "कुछ खरोंचें थीं, जैसे किसी ने नाखूनों से दीवारों को खुरचा हो, और कुछ अस्पष्ट चित्र, जैसे बच्चों ने बनाए हों। रवि ने टॉर्च घुमाई। कमरे के एक कोने में, उसने कुछ देखा।",
+      "words": 33,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on the dusty walls, showing strange, faint scratch marks and crude, childlike drawings. Ravi's flashlight beam moves slowly, revealing the unsettling details in the oppressive silence."
+    },
+    {
+      "id": 24,
+      "text": "वह एक आकृति थी। धुंधली, पारदर्शी, लगभग अदृश्य। एक छोटी बच्ची जैसी, जो कोने में सहमी हुई बैठी थी। उसकी आँखें रवि पर टिकी थीं, जिनमें एक अजीब सी उदासी और बेबसी थी।",
+      "words": 33,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi's flashlight illuminates a corner of the room, revealing a faint, translucent, child-like figure huddled there. Its eyes are fixed on Ravi, filled with an unsettling mix of sadness and helplessness."
+    },
+    {
+      "id": 25,
+      "text": "रवि का दिल उसके सीने में तेज़ी से धड़कने लगा। वह हिल भी नहीं पा रहा था। उस आकृति ने धीरे से अपना हाथ उठाया और रवि की ओर इशारा किया।",
+      "words": 31,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's terrified face, frozen in place. The translucent figure slowly raises a spectral hand, pointing directly at him, its gesture deliberate and menacing."
+    },
+    {
+      "id": 26,
+      "text": "फिर एक बेहद धीमी, लेकिन साफ़ आवाज़ उसके कानों में गूंजी, \"तुम... अब यहीं रहोगे...\"  इससे पहले कि रवि कुछ समझ पाता, दरवाज़ा ज़ोर से बंद हो गया। इतनी तेज़ी से कि पूरे घर में उसकी गूंज फैल गई।",
+      "words": 39,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi's perspective. The child-like figure's mouth moves, and a chilling, clear whisper echoes in the silent room. Suddenly, the door slams shut with a thunderous bang, plunging the room into darkness."
+    },
+    {
+      "id": 27,
+      "text": "दरवाज़े पर फिर वही ताला लग गया, मानो कभी खुला ही न हो। रवि ने चीखने की कोशिश की, पर उसकी आवाज़ उसके गले में ही घुट गई। उसने दरवाज़े पर हाथ मारा, उसे खोलने की कोशिश की, पर वह पत्थर की तरह अड़ा हुआ था।",
+      "words": 46,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi frantically pounds on the now relocked door, his face contorted in a silent scream. The heavy wood remains unyielding, a solid barrier. Desperation and terror are etched on his face."
+    },
+    {
+      "id": 28,
+      "text": "कमरा अचानक और ठंडा हो गया, और हवा में घुटन बढ़ गई। उसे लगा जैसे दीवारें उसके करीब आ रही हैं। वह हताश होकर ज़मीन पर बैठ गया। उसके शरीर में एक अजीब सी सिहरन दौड़ गई।",
+      "words": 37,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Wide shot of the room, now colder and more suffocating. Ravi collapses to the dusty floor, hunched over, his body trembling. The walls seem to press in, making the space feel smaller and more menacing."
+    },
+    {
+      "id": 29,
+      "text": "उसे लगा जैसे उसकी त्वचा ठंडी पड़ती जा रही है, और उसकी आँखें धुंधला रही हैं। उसने अपने हाथों को देखा। वे धीरे-धीरे पारदर्शी होते जा रहे थे। उसकी धड़कनें धीमी पड़ रही थीं, और उसका अस्तित्व कमरे की धुंधली हवा में घुलता जा रहा था।",
+      "words": 46,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Close-up on Ravi's hands, slowly becoming translucent and fading. His eyes are glazed over, his face pale and distant. His body shimmers, dissolving into the hazy air of the room."
+    },
+    {
+      "id": 30,
+      "text": "उसे उस बच्ची की आकृति याद आई, जिसने उसकी ओर इशारा किया था। अब उसे समझ आया। वह बच्ची नहीं थी। वह तो उस कमरे का अगला शिकार था। और जो 'अदृश्य' आकृति उसने देखी थी, वह कोई और नहीं, बल्कि...",
+      "words": 41,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Ravi's fading vision. The child-like figure from before now stands clear, no longer transparent, a knowing, almost sinister look on its face, confirming a horrifying realization."
+    },
+    {
+      "id": 31,
+      "text": "वह खुद था, जो अब इस कमरे का स्थायी निवासी बन चुका था। उसकी आत्मा, अब इस कमरे में कैद थी, इंतज़ार कर रही थी। इंतज़ार... किसी और का... जो अगले शिकार के रूप में उस बंद दरवाज़े के लिए चाबी ढूंढेगा, उसे खोलेगा, और उसके स्थान पर खुद कैद हो जाएगा।",
+      "words": 52,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: The room is empty again, save for a faint, shimmering, translucent outline where Ravi once stood. His spectral form is now a permanent resident, waiting silently in the oppressive gloom."
+    },
+    {
+      "id": 32,
+      "text": "और अब, मैं इंतज़ार कर रहा था... किसी और का... उस चाबी को ढूंढने का...",
+      "words": 15,
+      "image_prompt": "2D animated cartoon style, dark horror atmosphere, dark blue and purple color palette, flat colors with bold outlines, cinematic composition, no text, no letters, no watermark. Main character: Ravi: A man in his late 20s, with a serious but curious face, short dark hair, wearing a simple button-up shirt and trousers, suitable for a writer seeking solitude. Scene: Wide shot of the locked door, now seemingly untouched and forgotten. The heavy padlock gleams faintly in the perpetual twilight of the corridor, awaiting the next unsuspecting visitor."
+    }
+  ]
+}
