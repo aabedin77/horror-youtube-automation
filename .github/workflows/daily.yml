@@ -10,7 +10,8 @@ permissions:
 
 jobs:
   create-content:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -22,67 +23,147 @@ jobs:
           python-version: "3.12"
 
       - name: Install free TTS
-        run: pip install edge-tts
+        run: pip install edge-tts mutagen
 
       - name: Generate script and voice
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python - <<'PY'
-          import os, json, urllib.request, asyncio
+          import os, re, sys, json, time, asyncio
+          import urllib.request, urllib.error
           from datetime import datetime, timezone
           import edge_tts
+          from mutagen.mp3 import MP3
 
           key = os.environ["GEMINI_API_KEY"]
           date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+          MIN_WORDS = 1000
 
-          prompt = """
-          Write an original Hindi horror story in Devanagari
-          for a YouTube video, about 5 minutes long.
-          Start with a strong hook, build suspense, and end
-          with an unexpected twist. Output only the story.
+          PROMPT = """
+          Write an original Hindi horror story in Devanagari script
+          for a YouTube narration video.
+
+          Length: 1300 to 1500 words. This is mandatory. The story
+          must take 8 to 10 minutes to narrate aloud.
+
+          Structure: a strong hook in the first 3 sentences, slow
+          suspense building across several parts, a terrifying
+          climax, and an unexpected twist ending.
+
+          Rules:
+          - Line 1: only the story title in Hindi.
+          - Then a blank line, then the story as plain narration.
+          - No markdown, no headings, no bullet points, no asterisks,
+            no stage directions, no sound-effect notes.
+          - No real people, real brands or copyrighted characters.
+          - Avoid graphic gore. Focus on atmosphere and fear.
           """
 
-          url = (
-              "https://generativelanguage.googleapis.com/v1beta/"
-              "models/gemini-2.5-flash:generateContent?key=" + key
-          )
+          def call_gemini():
+              url = (
+                  "https://generativelanguage.googleapis.com/v1beta/"
+                  "models/gemini-2.5-flash:generateContent"
+              )
+              payload = {
+                  "contents": [{"parts": [{"text": PROMPT}]}],
+                  "generationConfig": {
+                      "maxOutputTokens": 20000,
+                      "temperature": 0.9,
+                  },
+              }
+              req = urllib.request.Request(
+                  url,
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      "Content-Type": "application/json",
+                      "x-goog-api-key": key,
+                  },
+              )
+              with urllib.request.urlopen(req, timeout=180) as r:
+                  data = json.loads(r.read())
+              parts = data["candidates"][0]["content"]["parts"]
+              return "\n".join(p["text"] for p in parts if "text" in p).strip()
 
-          payload = {
-              "contents": [{"parts": [{"text": prompt}]}]
-          }
+          def clean(text):
+              text = re.sub(r"^\s*-{3,}\s*$", "", text, flags=re.M)
+              text = re.sub(r"[*#_`>~]", "", text)
+              text = re.sub(r"\n{3,}", "\n\n", text)
+              return text.strip()
 
-          req = urllib.request.Request(
-              url,
-              data=json.dumps(payload).encode(),
-              headers={"Content-Type": "application/json"}
-          )
+          best = None
+          for attempt in range(1, 4):
+              try:
+                  text = clean(call_gemini())
+              except urllib.error.HTTPError as e:
+                  print("Gemini HTTP error:", e.code, e.read().decode()[:500])
+                  time.sleep(30 * attempt)
+                  continue
+              except Exception as e:
+                  print("Gemini error:", repr(e))
+                  time.sleep(20 * attempt)
+                  continue
+              title, _, story = text.partition("\n")
+              title, story = title.strip(), story.strip()
+              words = len(story.split())
+              print(f"Attempt {attempt}: {words} words")
+              if best is None or words > best[2]:
+                  best = (title, story, words)
+              if words >= MIN_WORDS:
+                  break
 
-          with urllib.request.urlopen(req, timeout=120) as response:
-              data = json.loads(response.read())
-
-          script = "\n".join(
-              p["text"]
-              for p in data["candidates"][0]["content"]["parts"]
-              if "text" in p
-          ).strip()
+          if best is None:
+              sys.exit("ERROR: Gemini did not return any story.")
+          title, story, words = best
+          if words < MIN_WORDS:
+              sys.exit(f"ERROR: story too short ({words} words).")
 
           os.makedirs("scripts", exist_ok=True)
           os.makedirs("audio", exist_ok=True)
+          script_path = f"scripts/horror-{date}.md"
+          audio_path = f"audio/horror-{date}.mp3"
 
-          with open(f"scripts/horror-{date}.md", "w", encoding="utf-8") as f:
-              f.write(script)
+          with open(script_path, "w", encoding="utf-8") as f:
+              f.write(f"# {title}\n\n{story}\n")
 
           async def make_audio():
               voice = edge_tts.Communicate(
-                  script,
-                  voice="hi-IN-SwaraNeural",
-                  rate="-5%"
+                  story, voice="hi-IN-SwaraNeural", rate="-5%"
               )
-              await voice.save(f"audio/horror-{date}.mp3")
+              await voice.save(audio_path)
 
-          asyncio.run(make_audio())
-          print("Hindi script and voice-over generated!")
+          for attempt in range(1, 4):
+              try:
+                  asyncio.run(make_audio())
+                  break
+              except Exception as e:
+                  print("TTS error:", repr(e))
+                  time.sleep(10 * attempt)
+          else:
+              sys.exit("ERROR: voice generation failed.")
+
+          size_kb = os.path.getsize(audio_path) // 1024
+          if size_kb < 100:
+              sys.exit(f"ERROR: audio file too small ({size_kb} KB).")
+
+          dur = MP3(audio_path).info.length
+          mins, secs = int(dur // 60), int(dur % 60)
+          note = "OK"
+          if dur < 420:
+              note = "WARNING: shorter than 7 minutes"
+          elif dur > 660:
+              note = "WARNING: longer than 11 minutes"
+
+          report = (
+              "## Result\n"
+              f"- Title: {title}\n"
+              f"- Words: {words}\n"
+              f"- Audio length: {mins}m {secs}s ({size_kb} KB)\n"
+              f"- Length check: {note}\n"
+          )
+          print(report)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write(report)
           PY
 
       - name: Save content
