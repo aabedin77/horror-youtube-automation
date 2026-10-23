@@ -2,6 +2,10 @@ name: Make Scene Images
 
 on:
   workflow_dispatch:
+    inputs:
+      max_images:
+        description: "How many images to make in this run"
+        default: "12"
 
 permissions:
   contents: write
@@ -15,17 +19,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate images for all scenes
+      - name: Generate images for scenes
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          MAX_IMAGES: ${{ github.event.inputs.max_images }}
         run: |
           python3 - <<'PY'
-          import os, re, json, glob, sys, time, base64
+          import os, json, glob, sys, time, base64
           import urllib.request, urllib.error
 
           acct = os.environ["CF_ACCOUNT_ID"].strip()
           token = os.environ["CF_API_TOKEN"].strip()
+          try:
+              max_images = int(os.environ.get("MAX_IMAGES") or 12)
+          except ValueError:
+              max_images = 12
+
           model = "@cf/black-forest-labs/flux-1-schnell"
           url = ("https://api.cloudflare.com/client/v4/accounts/"
                  + acct + "/ai/run/" + model)
@@ -41,10 +51,21 @@ jobs:
           outdir = f"images/{date}"
           os.makedirs(outdir, exist_ok=True)
 
-          STYLE = ("2D animated cartoon style, dark horror atmosphere, "
-                   "dark blue and purple color palette, flat colors with "
-                   "bold outlines, cinematic composition, no text, "
-                   "no letters, no watermark. ")
+          STYLE = ("2D animated graphic-novel style, thick clean ink "
+                   "outlines, flat cel shading, muted desaturated green "
+                   "and teal color palette, moody cinematic lighting, "
+                   "detailed background, subject centered in frame, "
+                   "no text, no letters, no signs, no watermark. ")
+
+          def build_prompt(sc, with_char=True):
+              p = sc["image_prompt"]
+              scene_part = p.split("Scene:", 1)[-1].strip()
+              char = ""
+              if "Main character:" in p and "Scene:" in p:
+                  char = p.split("Main character:", 1)[1].split("Scene:", 1)[0].strip()
+              if with_char and char:
+                  return STYLE + "Main character: " + char + " Scene: " + scene_part
+              return STYLE + scene_part
 
           def generate(prompt):
               payload = {"prompt": prompt[:1900], "steps": 4}
@@ -61,10 +82,10 @@ jobs:
                   d = json.loads(r.read())
               return base64.b64decode(d["result"]["image"])
 
-          ok, failed, skipped = 0, [], 0
-          errors = []
-          times = []
+          created, failed, skipped = 0, [], 0
+          errors, times = [], []
           quota_hit = False
+          stopped_by_cap = False
           t_start = time.time()
 
           for sc in scenes:
@@ -73,10 +94,12 @@ jobs:
               if os.path.exists(path) and os.path.getsize(path) > 20000:
                   skipped += 1
                   continue
+              if created >= max_images:
+                  stopped_by_cap = True
+                  break
 
-              scene_part = sc["image_prompt"].split("Scene:", 1)[-1].strip()
-              attempts = [sc["image_prompt"], sc["image_prompt"],
-                          STYLE + scene_part]
+              attempts = [build_prompt(sc, True), build_prompt(sc, True),
+                          build_prompt(sc, False)]
               done = False
               for n, p in enumerate(attempts, 1):
                   t0 = time.time()
@@ -86,7 +109,7 @@ jobs:
                           raise ValueError("image too small")
                       open(path, "wb").write(raw)
                       times.append(time.time() - t0)
-                      ok += 1
+                      created += 1
                       done = True
                       print(f"scene {sid}: ok (try {n}, {times[-1]:.1f}s)")
                       break
@@ -95,8 +118,9 @@ jobs:
                       print(f"scene {sid} try {n}: HTTP {e.code} {body}")
                       errors.append(f"scene {sid}: HTTP {e.code} {body[:150]}")
                       if e.code == 429 or "neuron" in body.lower() \
-                              or "quota" in body.lower() or "limit" in body.lower():
+                              or "quota" in body.lower():
                           quota_hit = True
+                          break
                       time.sleep(5 * n)
                   except Exception as e:
                       print(f"scene {sid} try {n}: {repr(e)[:200]}")
@@ -105,32 +129,34 @@ jobs:
               if not done:
                   failed.append(sid)
                   if quota_hit:
-                      print("Quota/limit problem, stopping early.")
+                      print("Daily quota reached, stopping.")
                       break
               time.sleep(1)
 
+          have = len([f for f in os.listdir(outdir) if f.endswith(".jpg")])
           total_time = time.time() - t_start
           avg = (sum(times) / len(times)) if times else 0
           lines = [
               "## Images result",
               f"- Scenes total: {len(scenes)}",
-              f"- Created now: {ok}",
+              f"- Images now in folder: {have} of {len(scenes)}",
+              f"- Created in this run: {created} (cap was {max_images})",
               f"- Already existed: {skipped}",
               f"- Failed: {len(failed)} {failed}",
               f"- Average time per image: {avg:.1f}s",
-              f"- Total time: {total_time/60:.1f} min",
-              f"- Quota/limit problem seen: {'YES' if quota_hit else 'no'}",
+              f"- Daily quota reached: {'YES' if quota_hit else 'no'}",
+              f"- Stopped by cap: {'yes' if stopped_by_cap else 'no'}",
           ]
           if errors:
               lines.append("- Last errors:")
-              for e in errors[-3:]:
+              for e in errors[-2:]:
                   lines.append("  - " + e)
           report = "\n".join(lines) + "\n"
           print(report)
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
               f.write(report)
 
-          if failed:
+          if failed and not quota_hit:
               sys.exit(f"Some scenes failed: {failed}")
           PY
 
