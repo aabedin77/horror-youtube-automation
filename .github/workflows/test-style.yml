@@ -1,0 +1,112 @@
+name: Test Style
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-style:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate 3 style test images
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os, json, base64, time, urllib.request, urllib.error
+
+          acct = os.environ["CF_ACCOUNT_ID"].strip()
+          token = os.environ["CF_API_TOKEN"].strip()
+          model = "@cf/black-forest-labs/flux-1-schnell"
+          url = ("https://api.cloudflare.com/client/v4/accounts/"
+                 + acct + "/ai/run/" + model)
+
+          style = ("2D animated graphic-novel style, thick clean ink "
+                   "outlines, flat cel shading, muted desaturated green "
+                   "and teal color palette, moody cinematic lighting, "
+                   "detailed background, no text, no letters, no signs, "
+                   "no watermark. ")
+          prompts = [
+              style + "Two Indian police constables in khaki uniforms "
+                      "holding old rifles, standing in a dim hospital "
+                      "corridor at night, flickering tube lights, "
+                      "wooden bench, wide shot.",
+              style + "An empty old government hospital ward at night, "
+                      "rows of iron beds, one bed with a rumpled sheet, "
+                      "a faint shadow near the window, wide shot.",
+              style + "Close-up of a nervous Indian police constable's "
+                      "face lit by a torch, sweat on forehead, dark "
+                      "corridor behind him.",
+          ]
+
+          def call(payload):
+              req = urllib.request.Request(
+                  url,
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      "Content-Type": "application/json",
+                      "Authorization": "Bearer " + token,
+                      "User-Agent": "horror-automation/1.0",
+                  },
+              )
+              with urllib.request.urlopen(req, timeout=120) as r:
+                  d = json.loads(r.read())
+              return base64.b64decode(d["result"]["image"])
+
+          os.makedirs("test", exist_ok=True)
+          lines = ["## Style test"]
+
+          for i, p in enumerate(prompts, 1):
+              raw, mode = None, ""
+              try:
+                  raw = call({"prompt": p, "steps": 4,
+                              "width": 1024, "height": 576})
+                  mode = "16:9 size accepted"
+              except urllib.error.HTTPError as e:
+                  body = e.read().decode()[:200]
+                  lines.append(f"- Image {i} with size: HTTP {e.code} {body}")
+                  if e.code == 429:
+                      lines.append("- Quota problem, stopping.")
+                      break
+                  try:
+                      raw = call({"prompt": p, "steps": 4})
+                      mode = "default size (no 16:9)"
+                  except urllib.error.HTTPError as e2:
+                      lines.append(f"- Image {i} fallback: HTTP {e2.code} {e2.read().decode()[:200]}")
+                  except Exception as e2:
+                      lines.append(f"- Image {i} fallback error: {repr(e2)[:200]}")
+              except Exception as e:
+                  lines.append(f"- Image {i} error: {repr(e)[:200]}")
+
+              if raw:
+                  ext = "jpg" if raw[:2] == b"\xff\xd8" else "png"
+                  path = f"test/style-{i}.{ext}"
+                  open(path, "wb").write(raw)
+                  lines.append(f"- Image {i}: SAVED {path} ({len(raw)//1024} KB) - {mode}")
+              time.sleep(2)
+
+          report = "\n".join(lines) + "\n"
+          print(report)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write(report)
+          PY
+
+      - name: Save test images
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add test/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Add style test"
+            git pull --rebase || true
+            git push
+          fi
