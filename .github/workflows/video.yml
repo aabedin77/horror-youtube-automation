@@ -1,0 +1,143 @@
+name: Make Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many scenes to include (32 = full video)"
+        default: "5"
+
+permissions:
+  contents: read
+
+jobs:
+  video:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make sure ffmpeg is installed
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -version | head -1
+
+      - name: Build video
+        env:
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          python3 - <<'PY'
+          import os, json, glob, subprocess, sys, time
+
+          t_start = time.time()
+          FPS = 25
+
+          def probe(path):
+              out = subprocess.check_output([
+                  "ffprobe", "-v", "error", "-show_entries",
+                  "format=duration", "-of", "default=nw=1:nk=1", path])
+              return float(out.decode().strip())
+
+          files = sorted(glob.glob("scenes/horror-*.json"))
+          if not files:
+              sys.exit("ERROR: no scenes file")
+          data = json.load(open(files[-1], encoding="utf-8"))
+          date = data["date"]
+          scenes = data["scenes"]
+
+          try:
+              limit = int(os.environ.get("LIMIT") or 5)
+          except ValueError:
+              limit = 5
+          scenes = scenes[:max(1, limit)]
+
+          audio = f"audio/horror-{date}.mp3"
+          if not os.path.exists(audio):
+              sys.exit(f"ERROR: missing {audio}")
+
+          imgdir = f"images/{date}"
+          missing = [s["id"] for s in scenes
+                     if not os.path.exists(f"{imgdir}/scene-{s['id']:02d}.jpg")]
+          if missing:
+              sys.exit(f"ERROR: missing images for scenes {missing}")
+
+          audio_dur = probe(audio)
+          all_words = sum(s["words"] for s in data["scenes"])
+          total_video = audio_dur + 1.0
+
+          os.makedirs("work", exist_ok=True)
+          os.makedirs("out", exist_ok=True)
+          clips = []
+
+          for i, sc in enumerate(scenes):
+              dur = total_video * sc["words"] / all_words
+              dur = max(2.0, round(dur * FPS) / FPS)
+              d = f"{dur:.3f}"
+
+              if i % 2 == 0:
+                  y = f"(ih-oh)*t/{d}"
+              else:
+                  y = f"(ih-oh)*(1-t/{d})"
+
+              vf = (
+                  "scale=1400:1400:flags=lanczos,"
+                  f"crop=1280:720:(iw-ow)/2:'{y}',"
+                  f"fade=t=in:st=0:d=0.5,fade=t=out:st={dur-0.5:.3f}:d=0.5,"
+                  "format=yuv420p"
+              )
+              img = f"{imgdir}/scene-{sc['id']:02d}.jpg"
+              clip = f"work/clip-{sc['id']:02d}.mp4"
+              cmd = ["ffmpeg", "-y", "-loglevel", "error",
+                     "-loop", "1", "-framerate", str(FPS), "-t", d,
+                     "-i", img, "-vf", vf,
+                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
+                     "-r", str(FPS), "-pix_fmt", "yuv420p", clip]
+              r = subprocess.run(cmd, capture_output=True, text=True)
+              if r.returncode != 0:
+                  print(r.stderr[-1500:])
+                  sys.exit(f"ERROR: ffmpeg failed on scene {sc['id']}")
+              clips.append(clip)
+              print(f"scene {sc['id']}: {dur:.1f}s done")
+
+          with open("work/list.txt", "w") as f:
+              for c in clips:
+                  f.write("file '" + os.path.basename(c) + "'\n")
+
+          out = f"out/video-{date}.mp4"
+          cmd = ["ffmpeg", "-y", "-loglevel", "error",
+                 "-f", "concat", "-safe", "0", "-i", "work/list.txt",
+                 "-i", audio, "-map", "0:v", "-map", "1:a",
+                 "-c:v", "copy", "-c:a", "aac", "-b:a", "128k",
+                 "-shortest", "-movflags", "+faststart", out]
+          r = subprocess.run(cmd, capture_output=True, text=True)
+          if r.returncode != 0:
+              print(r.stderr[-1500:])
+              sys.exit("ERROR: final mux failed")
+
+          vdur = probe(out)
+          size_mb = os.path.getsize(out) / 1024 / 1024
+          report = (
+              "## Video result\n"
+              f"- Scenes used: {len(scenes)} of {len(data['scenes'])}\n"
+              f"- Full audio length: {int(audio_dur//60)}m {int(audio_dur%60)}s\n"
+              f"- Video length: {int(vdur//60)}m {int(vdur%60)}s\n"
+              f"- File size: {size_mb:.1f} MB\n"
+              f"- Build time: {(time.time()-t_start)/60:.1f} min\n"
+              f"- Output: {out}\n"
+          )
+          print(report)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write(report)
+          PY
+
+      - name: Upload video
+        uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: out/*.mp4
+          retention-days: 3
