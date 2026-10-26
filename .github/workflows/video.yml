@@ -76,25 +76,32 @@ jobs:
 
           for i, sc in enumerate(scenes):
               dur = total_video * sc["words"] / all_words
-              dur = max(2.0, round(dur * FPS) / FPS)
+              frames = max(2 * FPS, round(dur * FPS))
+              dur = frames / FPS
               d = f"{dur:.3f}"
+              n = str(frames)
 
               if i % 2 == 0:
-                  y = f"(ih-oh)*t/{d}"
+                  z = "1+0.12*on/" + n
               else:
-                  y = f"(ih-oh)*(1-t/{d})"
+                  z = "1.12-0.12*on/" + n
 
-              vf = (
-                  "scale=1400:1400:flags=lanczos,"
-                  f"crop=1280:720:(iw-ow)/2:'{y}',"
+              fc = (
+                  "[0:v]split[a][b];"
+                  "[a]scale=1280:720:force_original_aspect_ratio=increase,"
+                  "crop=1280:720,gblur=sigma=30,eq=brightness=-0.05[bg];"
+                  "[b]scale=2880:2880:flags=lanczos,"
+                  f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':"
+                  "y='ih/2-(ih/zoom/2)':d=1:s=720x720:fps=" + str(FPS) + "[fg];"
+                  "[bg][fg]overlay=(W-w)/2:(H-h)/2,"
                   f"fade=t=in:st=0:d=0.5,fade=t=out:st={dur-0.5:.3f}:d=0.5,"
-                  "format=yuv420p"
+                  "format=yuv420p[v]"
               )
               img = f"{imgdir}/scene-{sc['id']:02d}.jpg"
               clip = f"work/clip-{sc['id']:02d}.mp4"
               cmd = ["ffmpeg", "-y", "-loglevel", "error",
                      "-loop", "1", "-framerate", str(FPS), "-t", d,
-                     "-i", img, "-vf", vf,
+                     "-i", img, "-filter_complex", fc, "-map", "[v]",
                      "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
                      "-r", str(FPS), "-pix_fmt", "yuv420p", clip]
               r = subprocess.run(cmd, capture_output=True, text=True)
