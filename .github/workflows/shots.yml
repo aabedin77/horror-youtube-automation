@@ -87,11 +87,27 @@ jobs:
           print(f"Shots: {len(shots_text)}, words: {total_words}, max words in a shot: {max(counts)}")
 
           # ---------- Gemini helpers ----------
+          SAFETY = [
+              {"category": c, "threshold": "BLOCK_ONLY_HIGH"}
+              for c in ("HARM_CATEGORY_HARASSMENT",
+                        "HARM_CATEGORY_HATE_SPEECH",
+                        "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                        "HARM_CATEGORY_DANGEROUS_CONTENT")
+          ]
+
+          def fail(msg):
+              print("ERROR:", msg)
+              with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a",
+                        encoding="utf-8") as f:
+                  f.write("## Shots FAILED\n- Reason: " + msg[:900] + "\n")
+              sys.exit(1)
+
           def call_gemini(prompt):
               url = ("https://generativelanguage.googleapis.com/v1beta/"
                      "models/gemini-2.5-flash:generateContent")
               payload = {
                   "contents": [{"parts": [{"text": prompt}]}],
+                  "safetySettings": SAFETY,
                   "generationConfig": {
                       "maxOutputTokens": 16000,
                       "temperature": 0.7,
@@ -105,10 +121,27 @@ jobs:
                            "x-goog-api-key": key})
               with urllib.request.urlopen(req, timeout=180) as r:
                   data = json.loads(r.read())
-              parts = data["candidates"][0]["content"]["parts"]
+              if not data.get("candidates"):
+                  raise RuntimeError(
+                      "Gemini returned no candidates. promptFeedback="
+                      + json.dumps(data.get("promptFeedback", {}))[:300]
+                      + " raw=" + json.dumps(data)[:300])
+              cand = data["candidates"][0]
+              parts = cand.get("content", {}).get("parts", [])
               text = "".join(p["text"] for p in parts if "text" in p).strip()
+              if not text:
+                  raise RuntimeError(
+                      "Gemini returned empty text. finishReason="
+                      + str(cand.get("finishReason"))
+                      + " safetyRatings="
+                      + json.dumps(cand.get("safetyRatings", []))[:300])
               text = re.sub(r"^```(?:json)?|```$", "", text).strip()
-              return json.loads(text)
+              try:
+                  return json.loads(text)
+              except Exception:
+                  raise RuntimeError(
+                      "Gemini text was not valid JSON. finishReason="
+                      + str(cand.get("finishReason")) + " start=" + text[:200])
 
           def with_retry(prompt, check):
               last = ""
@@ -127,7 +160,7 @@ jobs:
                       last = repr(e)[:300]
                       print("Attempt", attempt, last)
                   time.sleep(20 * attempt)
-              sys.exit("ERROR: Gemini failed: " + last)
+              fail("Gemini failed after 3 tries: " + last)
 
           # ---------- 1) character + world bible ----------
           BIBLE_PROMPT = (
@@ -242,23 +275,3 @@ jobs:
               f"- Words per shot: avg {total_words // len(shots)}, max {max(counts)}\n"
               f"- Estimated narration: {int(est // 60)}m {int(est % 60)}s\n"
               f"- Shots with the main character: {with_char}\n"
-              f"- Saved: {out}\n"
-              f"- Shot 1 text: {shots[0]['text']}\n"
-              f"- Shot 1 prompt: {shots[0]['image_prompt'][:350]}\n"
-          )
-          print(report)
-          with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a",
-                    encoding="utf-8") as f:
-              f.write(report)
-          PY
-
-      - name: Save shots
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scenes/
-          if ! git diff --cached --quiet; then
-            git commit -m "Add shots file"
-            git pull --rebase || true
-            git push
-          fi￼Enter
