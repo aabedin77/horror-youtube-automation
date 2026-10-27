@@ -7,11 +7,19 @@ WORDS_PER_SEC = 2.1
 key = os.environ.get("GEMINI_API_KEY", "")
 dry = os.environ.get("DRY_RUN") == "1"
 
+want = os.environ.get("SCRIPT_DATE", "").strip()
 files = sorted(glob.glob("scripts/horror-*.md"))
 if not files:
     sys.exit("ERROR: no script found in scripts/")
-src = files[-1]
+if want:
+    src = "scripts/horror-" + want + ".md"
+    if not os.path.exists(src):
+        have = ", ".join(os.path.basename(f)[len("horror-"):-3] for f in files)
+        sys.exit("ERROR: no script for date " + want + ". Available dates: " + have)
+else:
+    src = files[-1]
 date = os.path.basename(src)[len("horror-"):-3]
+print("Using script:", src)
 raw = open(src, encoding="utf-8").read().strip()
 rows = raw.split("\n")
 title = rows[0].lstrip("# ").strip()
@@ -77,7 +85,8 @@ def fail(msg):
     print("ERROR:", msg)
     with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a",
               encoding="utf-8") as f:
-        f.write("## Shots FAILED\n- Reason: " + msg[:900] + "\n")
+        f.write("## Shots FAILED\n- Script used: " + src + "\n"
+                "- Reason: " + msg[:900] + "\n")
     sys.exit(1)
 
 def call_gemini(prompt):
