@@ -2,6 +2,10 @@ name: Make Shots
 
 on:
   workflow_dispatch:
+    inputs:
+      script_date:
+        description: "Script date like 2026-10-21 (empty = newest script)"
+        default: ""
 
 permissions:
   contents: write
@@ -26,6 +30,7 @@ jobs:
       - name: Make shots
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SCRIPT_DATE: ${{ github.event.inputs.script_date }}
         run: python3 tools/make_shots.py
 
       - name: Save shots
