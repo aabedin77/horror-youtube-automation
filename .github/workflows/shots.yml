@@ -13,7 +13,7 @@ permissions:
 jobs:
   shots:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -34,12 +34,13 @@ jobs:
         run: python3 tools/make_shots.py
 
       - name: Save shots
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add scenes/
           if ! git diff --cached --quiet; then
-            git commit -m "Add shots file"
+            git commit -m "Save shots progress"
             git pull --rebase || true
             git push
           fi
