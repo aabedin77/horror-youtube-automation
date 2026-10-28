@@ -1,4 +1,4 @@
-import os, re, json, glob, sys, time, math
+import os, re, json, glob, sys, time, math, hashlib
 import urllib.request, urllib.error
 
 MAX_WORDS = 10
@@ -73,6 +73,7 @@ total_words = sum(counts)
 print(f"Shots: {len(shots_text)}, words: {total_words}, max words in a shot: {max(counts)}")
 
 # ---------- Gemini helpers ----------
+prompts = {}
 SAFETY = [
     {"category": c, "threshold": "BLOCK_ONLY_HIGH"}
     for c in ("HARM_CATEGORY_HARASSMENT",
@@ -86,12 +87,14 @@ def fail(msg):
     with open(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"), "a",
               encoding="utf-8") as f:
         f.write("## Shots FAILED\n- Script used: " + src + "\n"
+                "- Prompts saved so far: " + str(len(prompts)) + " of "
+                + str(len(shots_text)) + " (run again to continue)\n"
                 "- Reason: " + msg[:900] + "\n")
     sys.exit(1)
 
-def call_gemini(prompt):
+def call_gemini(prompt, model):
     url = ("https://generativelanguage.googleapis.com/v1beta/"
-           "models/gemini-2.5-flash:generateContent")
+           "models/" + model + ":generateContent")
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "safetySettings": SAFETY,
@@ -130,24 +133,31 @@ def call_gemini(prompt):
             "Gemini text was not valid JSON. finishReason="
             + str(cand.get("finishReason")) + " start=" + text[:200])
 
+PLAN = [("gemini-2.5-flash", 15), ("gemini-2.5-flash", 30),
+        ("gemini-2.5-flash-lite", 45), ("gemini-2.5-flash-lite", 60),
+        ("gemini-2.5-flash", 90), ("gemini-2.5-flash", 120)]
+
 def with_retry(prompt, check):
     last = ""
-    for attempt in range(1, 4):
+    for attempt, (model, wait) in enumerate(PLAN, 1):
         try:
-            result = call_gemini(prompt)
+            result = call_gemini(prompt, model)
             ok, why = check(result)
             if ok:
+                if model != PLAN[0][0]:
+                    print("(used backup model " + model + ")")
                 return result
             last = why
-            print(f"Attempt {attempt}: {why}")
+            print(f"Attempt {attempt} [{model}]: {why}")
         except urllib.error.HTTPError as e:
-            last = f"HTTP {e.code} {e.read().decode()[:300]}"
-            print("Attempt", attempt, last)
+            last = f"HTTP {e.code} {e.read().decode()[:200]}"
+            print(f"Attempt {attempt} [{model}]:", last)
         except Exception as e:
             last = repr(e)[:300]
-            print("Attempt", attempt, last)
-        time.sleep(20 * attempt)
-    fail("Gemini failed after 3 tries: " + last)
+            print(f"Attempt {attempt} [{model}]:", last)
+        if attempt < len(PLAN):
+            time.sleep(wait)
+    fail("Gemini failed after " + str(len(PLAN)) + " tries: " + last)
 
 # ---------- 1) character + world bible ----------
 BIBLE_PROMPT = (
@@ -160,7 +170,22 @@ BIBLE_PROMPT = (
     "of the main setting (Indian context).\n\nStory:\n" + story
 )
 
-if dry:
+story_hash = hashlib.md5(story.encode("utf-8")).hexdigest()[:12]
+partial_path = f"scenes/partial-{date}.json"
+bible = None
+if os.path.exists(partial_path) and not dry:
+    try:
+        pj = json.load(open(partial_path, encoding="utf-8"))
+        if pj.get("hash") == story_hash and pj.get("n") == len(shots_text):
+            bible = pj["bible"]
+            prompts.update({int(k): v for k, v in pj["prompts"].items()})
+            print(f"Resuming: {len(prompts)} prompts already done")
+    except Exception as e:
+        print("Could not read saved progress:", repr(e)[:200])
+
+if bible is not None:
+    pass
+elif dry:
     bible = {"character": "DRY character", "world": "DRY world"}
 else:
     bible = with_retry(
@@ -177,9 +202,16 @@ STYLE = ("2D animated graphic-novel style, thick clean ink "
          "highly detailed background, whole subject centered "
          "in frame, no text, no letters, no signs, no watermark. ")
 
-prompts = {}
+def save_partial():
+    os.makedirs("scenes", exist_ok=True)
+    with open(partial_path, "w", encoding="utf-8") as f:
+        json.dump({"hash": story_hash, "n": len(shots_text), "bible": bible,
+                   "prompts": prompts}, f, ensure_ascii=False)
+
 for start in range(0, len(shots_text), BATCH):
     chunk = list(range(start, min(start + BATCH, len(shots_text))))
+    if all((i + 1) in prompts for i in chunk):
+        continue
     lines = "\n".join(f"{i + 1}: {shots_text[i]}" for i in chunk)
     ids = [i + 1 for i in chunk]
     PROMPT = (
@@ -225,6 +257,8 @@ for start in range(0, len(shots_text), BATCH):
         time.sleep(8)
     for s in res["shots"]:
         prompts[s["id"]] = s
+    if not dry:
+        save_partial()
     print(f"Prompts done: {len(prompts)} / {len(shots_text)}")
 
 # ---------- 3) save ----------
@@ -249,6 +283,9 @@ with open(out, "w", encoding="utf-8") as f:
     json.dump({"title": title, "date": date, "character": character,
                "world": world, "shots": shots},
               f, ensure_ascii=False, indent=2)
+
+if os.path.exists(partial_path):
+    os.remove(partial_path)
 
 est = total_words / WORDS_PER_SEC
 over = sum(1 for c in counts if c > MAX_WORDS)
