@@ -1,0 +1,1303 @@
+{
+  "title": "छाया का रहस्य",
+  "date": "2026-10-21",
+  "character": "Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow.",
+  "world": "The story is set in a contemporary era, but primarily takes place in an old, secluded ancestral mansion named 'Shanti Niketan' located on the outskirts of a small Indian village. The mansion has a traditional, decaying look with creaking wooden stairs, flickering electricity, and a general air of neglect, contrasting sharply with the modern city life Ravi left behind.",
+  "shots": [
+    {
+      "id": 1,
+      "text": "उसकी हर रात एक डरावने सपने से शुरू होती थी।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi (late 20s/early 30s, lean build, dark hair, worried furrowed brow) sitting upright in bed in a modern city apartment, eyes wide open in fear, sweat on his forehead. Dim, cool lighting from a window, casting long shadows. The mood is tense and anxious."
+    },
+    {
+      "id": 2,
+      "text": "एक सपना, जो नींद में नहीं,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's face, eyes darting left and right, a look of profound unease, not quite fully awake but not asleep. Soft, eerie glow from an unseen source illuminates his anxious expression. The background is a blur of a dimly lit room, enhancing his isolation."
+    },
+    {
+      "id": 3,
+      "text": "बल्कि जागते हुए आता था।",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot looking past Ravi's head towards a plain, light-colored wall. His shadow is cast prominently, slightly distorted and elongated. The lighting is stark, with a single, harsh light source creating dramatic contrast. The mood is unsettling and foreboding."
+    },
+    {
+      "id": 4,
+      "text": "और हर बार, उस सपने का अंत एक ही",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of a dimly lit bedroom in a city apartment. Ravi is a small figure sitting on the edge of his bed, staring intently at a wall. The room is sparse, emphasizing his solitude. A single lamp casts a weak, flickering light, creating an ominous atmosphere."
+    },
+    {
+      "id": 5,
+      "text": "भयावह दृश्य पर होता था:",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Extreme close-up on a patch of a textured, neutral-colored wall. A faint, almost imperceptible dark smudge or ripple appears, suggesting movement. The lighting is dim and indirect, with a soft, unsettling glow. The mood is mysterious and slightly eerie."
+    },
+    {
+      "id": 6,
+      "text": "एक परछाई, जो दीवार पर नाचती थी और",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a dark, amorphous shadow beginning to form on a plain wall, resembling a dancing, elongated figure. The lighting is low-key, with strong contrasts between light and shadow. The mood is suspenseful and visually abstract."
+    },
+    {
+      "id": 7,
+      "text": "फिर धीरे-धीरे उसे निगल जाती थी।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the wall as the dark, amorphous shadow grows larger, seeming to spread and engulf the entire frame, becoming a vast, inky blackness. The lighting is nearly absent, plunging the scene into a profound, suffocating darkness. The mood is terrifying and overwhelming."
+    },
+    {
+      "id": 8,
+      "text": "रवि इसे अपने तनाव का नतीजा मानता था।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, leaning forward at a desk in a cluttered city apartment, hands clasped, head down, looking exhausted and stressed. His brow is deeply furrowed. The lighting is harsh and artificial, reflecting the strain of city life. The mood is one of weariness and mental fatigue."
+    },
+    {
+      "id": 9,
+      "text": "शहर की आपाधापी, काम का बोझ, और नींद की कमी",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a stack of office papers, a half-empty coffee mug, and a laptop on a desk, all bathed in the cold light of a computer screen. The objects are slightly disheveled, suggesting long hours of work. The mood is one of mundane exhaustion."
+    },
+    {
+      "id": 10,
+      "text": "ये सब मिलकर उसके दिमाग में ऐसी",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Low-angle shot looking up at Ravi's face, his eyes shadowed, mouth slightly agape, conveying a sense of mental overload and confusion. The background is a blur of indistinct city lights through a window. The lighting is dim, emphasizing his internal struggle."
+    },
+    {
+      "id": 11,
+      "text": "अजीबोगरीब चीजें पैदा कर रहे थे।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's hand gripping his temple, fingers pressing hard, as if trying to relieve a headache. His knuckles are white. The lighting is stark and unforgiving, highlighting the tension in his hand. The mood is one of intense discomfort and mental anguish."
+    },
+    {
+      "id": 12,
+      "text": "उसने सोचा कि शायद एक बदलाव की ज़रूरत है।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi looking out a window of his city apartment, his back to the camera. He gazes at the distant, hazy city skyline. The light is diffused and slightly melancholic, suggesting a longing for change. The mood is reflective and yearning."
+    },
+    {
+      "id": 13,
+      "text": "पुराने ज़माने की हवेली, जो उसके दादाजी की थी,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of an imposing, dilapidated ancestral mansion, 'Shanti Niketan', viewed from a slightly low angle, emphasizing its grand yet decaying presence. Overgrown foliage surrounds it, and the sky is overcast, lending a somber, mysterious atmosphere."
+    },
+    {
+      "id": 14,
+      "text": "वर्षों से वीरान पड़ी थी।",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a weathered wooden door on the mansion, peeling paint and rusted hinges visible, suggesting years of neglect. A faint shadow falls across it. The lighting is muted, highlighting the textures of decay. The mood is one of abandonment and forgotten history."
+    },
+    {
+      "id": 15,
+      "text": "शहर से दूर, एक छोटे से गाँव के किनारे,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Establishing shot of a small, rustic Indian village nestled amongst green fields, with the distant, imposing mansion visible on the horizon. The lighting is natural, late afternoon sun, but the mansion appears slightly darker, a point of contrast. The mood is serene yet slightly isolated."
+    },
+    {
+      "id": 16,
+      "text": "वह 'शांत निकेतन' नाम से जानी जाती थी।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Overhead shot looking down at the mansion's sprawling, overgrown grounds, with winding, neglected paths. The architecture is traditional Indian, with intricate but faded details. The lighting is diffused, casting soft, melancholic shadows. The mood is quiet and desolate."
+    },
+    {
+      "id": 17,
+      "text": "रवि ने सोचा कि वहाँ शांति मिलेगी,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, a hopeful yet tired expression on his face, standing in front of the mansion. He looks up at it with a mixture of apprehension and optimism. The lighting is warm morning light, momentarily dispelling the mansion's gloom. The mood is cautiously optimistic."
+    },
+    {
+      "id": 18,
+      "text": "वह अपनी नई किताब पर ध्यान केंद्रित कर पाएगा,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's hand holding a pen over a blank notebook, his gaze distant and thoughtful, imagining his new book. The background is softly blurred, focusing on his creative intent. The lighting is natural and gentle, suggesting a moment of peace. The mood is hopeful and focused."
+    },
+    {
+      "id": 19,
+      "text": "और शायद ये अजीब सपने भी बंद हो जाएँगे।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Silhouette of Ravi standing by a window inside the mansion, looking out at the peaceful village scenery, a faint smile on his face. The interior is dark, contrasting with the bright exterior. The mood is one of quiet contentment and momentary relief."
+    },
+    {
+      "id": 20,
+      "text": "गाँव के लोगों ने, जब रवि वहाँ पहुँचा,",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi's car (a modest, contemporary model) driving slowly through a dusty village road, past a group of elderly villagers. The sun is setting, casting long, golden shadows. The mood is observant and slightly wary."
+    },
+    {
+      "id": 21,
+      "text": "तो उसे कुछ अजीब निगाहों से देखा।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the faces of two elderly village women, their expressions a mix of curiosity and concern as they watch Ravi's car pass. Their faces are weathered, eyes sharp. The lighting is natural, emphasizing their traditional attire. The mood is watchful and slightly suspicious."
+    },
+    {
+      "id": 22,
+      "text": "कुछ बुज़ुर्गों ने उसे हवेली में",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, seen from a distance, approaching the mansion's main entrance. Two elderly village men stand near a well, gesturing subtly towards the mansion with worried expressions. The lighting is twilight, adding a touch of mystery. The mood is foreboding."
+    },
+    {
+      "id": 23,
+      "text": "अकेले न रहने की सलाह दी,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of the gnarled hands of an elderly villager, clasped together, as if in prayer or apprehension. The background is slightly out of focus, suggesting a conversation. The lighting is dim, highlighting the texture of age. The mood is solemn and cautionary."
+    },
+    {
+      "id": 24,
+      "text": "फुसफुसाते हुए कुछ पुरानी कहानियाँ सुनाईं, 'छाया' की बातें कीं।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, his back to the viewer, walking towards the mansion. In the foreground, blurred figures of villagers are seen whispering, their faces concerned. The lighting is crepuscular, creating a sense of unease. The mood is unsettling and mysterious."
+    },
+    {
+      "id": 25,
+      "text": "रवि ने उन्हें बस अंधविश्वास मानकर अनसुना कर दिया।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, inside the mansion, shrugging dismissively, a slight smirk on his face, indicating his disbelief in superstitions. He's unpacking a box of books. The lighting is bright and confident, reflecting his rational outlook. The mood is dismissive yet slightly naive."
+    },
+    {
+      "id": 26,
+      "text": "शुरुआत में, हवेली में सब सामान्य था।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion's main hall, initially appearing normal and peaceful. Sunlight streams through a large window, illuminating dust motes dancing in the air. The old furniture is covered in white sheets. The mood is calm and serene."
+    },
+    {
+      "id": 27,
+      "text": "हवा के झरोखे, पुरानी लकड़ी की सीढ़ियों का चरमराना,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a worn, wooden banister on a grand staircase, with light dust visible. A gentle breeze causes a nearby curtain to billow slightly. The lighting is soft and natural, emphasizing the quiet age of the place. The mood is nostalgic and tranquil."
+    },
+    {
+      "id": 28,
+      "text": "छत पर गिलहरियों की दौड़-भाग",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot looking up at the high ceiling of the mansion, with a hint of a squirrel's tail disappearing into the rafters. Sunlight filters through a small opening. The mood is playful and innocuous, typical of an old, undisturbed house."
+    },
+    {
+      "id": 29,
+      "text": "ये सब पुरानी इमारतों की सामान्य बातें थीं।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of a sun-drenched corner of a room, showing old, sturdy furniture and a patterned rug. Everything appears still and undisturbed. The lighting is bright and clear, emphasizing the initial sense of normalcy. The mood is peaceful and ordinary."
+    },
+    {
+      "id": 30,
+      "text": "रवि ने कुछ दिनों तक शांति का अनुभव किया,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, sitting comfortably in an armchair, reading a book, a faint smile on his face. He looks relaxed and content, temporarily at peace. The lighting is warm and inviting, suggesting a period of calm. The mood is serene and positive."
+    },
+    {
+      "id": 31,
+      "text": "लेकिन धीरे-धीरे,",
+      "words": 2,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, seen from a slightly low angle, sitting at a rustic wooden desk in the mansion. He looks tired, rubbing his temples, with a worried expression. The room is dimly lit by a single desk lamp, casting long shadows behind him, creating an uneasy atmosphere."
+    },
+    {
+      "id": 32,
+      "text": "एक अजीब बेचैनी ने उसे घेरना शुरू कर दिया।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's face, his brow furrowed in deep thought, eyes wide with a hint of anxiety. The lighting is soft but patchy, emphasizing the lines of stress on his face. The background is slightly out of focus, suggesting a feeling of unease closing in."
+    },
+    {
+      "id": 33,
+      "text": "रात के समय, कभी-कभी बिजली बेवजह flickering करती,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of an old, exposed light bulb in the mansion's hallway, flickering erratically. Sparks are barely visible, creating a momentary flash of light and then dimming. The surrounding area is dark and dusty, with peeling paint on the wall, adding to the sense of decay and disarray."
+    },
+    {
+      "id": 34,
+      "text": "जबकि पूरे गाँव में बिजली सामान्य रहती।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of a peaceful, well-lit Indian village street at night, seen from a distance, with houses showing steady, warm lights. In the foreground, a corner of the dark, sprawling mansion is visible, contrasting sharply with the calm village, highlighting its isolation."
+    },
+    {
+      "id": 35,
+      "text": "दरवाज़े अपने आप हल्के से खुल",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low angle shot looking up at an ornate, heavy wooden door in the mansion, slowly creaking open just a sliver. A sliver of darkness is visible through the gap. The lighting is dim, with moonlight barely illuminating the dusty floorboards in front of the door, creating a sense of quiet intrusion."
+    },
+    {
+      "id": 36,
+      "text": "जाते और फिर बंद हो जाते,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Over-the-shoulder shot from inside the mansion, looking at the same heavy wooden door as it slowly closes with a soft click. The hallway beyond is dark and empty. The subtle movement of the door creates a chilling sense of something entering or leaving unseen."
+    },
+    {
+      "id": 37,
+      "text": "जैसे कोई धीरे से अंदर आया",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, sitting up abruptly in his bed, eyes wide and scanning the room. He is wearing simple nightclothes. The room is mostly dark, with moonlight filtering through a window, casting long, eerie shadows. His posture conveys a sudden jolt of awareness and fear."
+    },
+    {
+      "id": 38,
+      "text": "हो और फिर चला गया हो।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Silhouette shot of a figure, barely discernible, standing just inside a partially open door. The figure is indistinct, thin, and seems to be observing the room from the shadows before slowly receding into the darkness. The scene is lit only by faint moonlight."
+    },
+    {
+      "id": 39,
+      "text": "रवि ने इसे पुरानी हवेली की खराबी मानकर टाल दिया।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's hand nervously running through his hair, a look of dismissive frustration on his face. He is trying to rationalize the strange occurrences. The background is blurred, focusing solely on his internal struggle to maintain composure."
+    },
+    {
+      "id": 40,
+      "text": "उसने खुद को समझाया कि यह सिर्फ़ उसकी कल्पना है,",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, leaning back in his chair at his desk, staring blankly into space. His face is pensive, trying to convince himself. The room is quiet, with only the soft glow of a lamp, emphasizing his solitude and the internal monologue."
+    },
+    {
+      "id": 41,
+      "text": "क्योंकि वह अकेले रह रहा है।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi alone in a vast, dimly lit room of the mansion. He is a small figure in the large, empty space, emphasizing his isolation. Moonlight streams through tall windows, creating stark contrasts of light and shadow, enhancing the feeling of loneliness."
+    },
+    {
+      "id": 42,
+      "text": "एक रात, जब रवि अपनी मेज़ पर लिख रहा था,",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, focused on his notebook, pen in hand, writing intently at his desk. The desk lamp illuminates his work, but the rest of the room is shrouded in deep shadows, creating a focused yet vulnerable atmosphere."
+    },
+    {
+      "id": 43,
+      "text": "उसे लगा जैसे कोई उसके पीछे खड़ा है।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's ear, a subtle shift in his expression as he tenses, as if he heard something. His eyes are slightly wide, indicating he's trying to discern a sound. The background is a soft blur of the dark room."
+    },
+    {
+      "id": 44,
+      "text": "उसने पलट कर देखा, तो गलियारे के अंत में,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot from behind Ravi, showing him slowly turning his head to look over his shoulder. The hallway beyond is dark and ominous. The light from his desk lamp barely reaches the distant corner, enhancing the suspense."
+    },
+    {
+      "id": 45,
+      "text": "जहाँ अँधेरा था, उसे एक हल्की सी परछाई दिखी।",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Long shot down a dark, dusty hallway of the mansion. At the very end, a faint, almost transparent human-like shadow is barely visible on the wall. The hallway is lit only by a sliver of distant light, making the shadow seem ethereal and unsettling."
+    },
+    {
+      "id": 46,
+      "text": "यह एक मानव आकृति की परछाई थी,",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the wall, showing an extremely thin, elongated shadow, resembling a human figure but distorted and indistinct. The texture of the old, cracked plaster wall is visible, adding to the eerie atmosphere. The lighting is low and mysterious."
+    },
+    {
+      "id": 47,
+      "text": "लेकिन बेहद पतली और अस्पष्ट।",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of the wavering, indistinct edges of the shadow on the wall, almost like smoke. It's barely there, leaving the viewer to question its reality. The surrounding wall is dark and unadorned, emphasizing the unsettling form."
+    },
+    {
+      "id": 48,
+      "text": "रवि ने अपनी आँखें झपकीं, और जब उसने दोबारा देखा,",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's eyes, blinking rapidly, then opening wide in disbelief and fear. His pupils are dilated, reflecting the dim light of the room. The focus is entirely on his reaction, conveying his internal struggle with what he just saw."
+    },
+    {
+      "id": 49,
+      "text": "तो वह परछाई ग़ायब हो चुकी थी।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the empty hallway, the spot where the shadow was now completely bare. The lighting is still dim, but there's no trace of the form. The silence of the empty space is palpable, creating a sense of eerie absence."
+    },
+    {
+      "id": 50,
+      "text": "उसके दिल की धड़कन तेज़ हो गई।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's chest, showing his hand gripping his shirt over his heart. His knuckles are white, and his breathing is visibly shallow and rapid, conveying intense fear and a racing heartbeat. The background is blurred, isolating his panicked reaction."
+    },
+    {
+      "id": 51,
+      "text": "क्या यह वही परछाई थी,",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his face pale and eyes still wide, looking intensely at the empty wall. He is questioning his sanity, piecing together the events. The room is softly lit, creating a contemplative yet deeply disturbed mood."
+    },
+    {
+      "id": 52,
+      "text": "जो उसके सपनों में आती थी?",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Dreamlike, slightly distorted wide shot of a shadowy figure dancing on a wall, similar to the one Ravi sees, but more fluid and menacing. The lighting is surreal, with hints of purple and blue, enhancing the nightmare quality."
+    },
+    {
+      "id": 53,
+      "text": "उसने टॉर्च उठाई और उस जगह पर गया,",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Low angle shot of Ravi's hand grabbing an old-fashioned, heavy-duty flashlight from his desk. The beam of light cuts through the darkness. The desk is cluttered with books and papers, hinting at his solitary work."
+    },
+    {
+      "id": 54,
+      "text": "लेकिन वहाँ कुछ भी नहीं था,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Point-of-view shot from Ravi's flashlight, sweeping across the dark, dusty wall where the shadow was. The beam reveals only the peeling paint and cracks, no trace of anything unusual. The silence is heavy, adding to the tension."
+    },
+    {
+      "id": 55,
+      "text": "सिर्फ़ दीवार का ख़ामोश अँधेरा।",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on a patch of the old, unadorned wall in deep shadow. The texture of the plaster is visible, but nothing else. The darkness feels heavy and oppressive, emphasizing the emptiness and the absence of the shadow."
+    },
+    {
+      "id": 56,
+      "text": "उसने इसे भी अपनी आँखों का धोखा मान लिया,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, standing in the hallway, his face etched with exhaustion and confusion. He slowly lowers the flashlight, his shoulders slumping in resignation. The dim light casts long, weary shadows around him."
+    },
+    {
+      "id": 57,
+      "text": "थकान और कल्पना का मिश्रण।",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's tired, strained face. He rubs his eyes, trying to clear his vision, a mixture of fatigue and self-doubt evident. The lighting is soft and warm, contrasting with his internal turmoil."
+    },
+    {
+      "id": 58,
+      "text": "लेकिन धीरे-धीरे, ये घटनाएँ बढ़ने लगीं।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion's interior at dusk, with lengthening shadows stretching across the floor and up the walls. The architecture looks grand but decaying, conveying a growing sense of foreboding. The mood is heavy and ominous."
+    },
+    {
+      "id": 59,
+      "text": "कभी उसे अपने नाम की फुसफुसाहट सुनाई देती,",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's ear again, but this time, his head is tilted, listening intently. His eyes are narrowed, trying to catch a faint, almost imperceptible whisper. The background is dark, focusing on his heightened senses."
+    },
+    {
+      "id": 60,
+      "text": "इतनी धीमी कि वह निश्चित नहीं हो पाता",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, looking around the room with a puzzled, slightly anxious expression. He is alone, questioning if he truly heard something or if it was just his imagination. The room is quiet, emphasizing his uncertainty."
+    },
+    {
+      "id": 61,
+      "text": "कि उसने सुना है या सिर्फ़ सोचा है।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, late 20s-early 30s, lean build, dark hair, standing in a dimly lit hallway of the old mansion. He has a worried furrow in his brow, head slightly tilted, as if straining to hear a faint sound. The walls are peeling, and the mood is tense and uncertain."
+    },
+    {
+      "id": 62,
+      "text": "कभी-कभी हवेली के एक ख़ास कोने में,",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low angle shot looking up at a dark, dusty, unused corner of the mansion's interior. No windows or doors are visible, just aged plaster walls meeting a high ceiling. The lighting is dim, casting long, unsettling shadows, creating a sense of isolation and mystery."
+    },
+    {
+      "id": 63,
+      "text": "जहाँ कोई खिड़की या दरवाज़ा नहीं था,",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a section of a crumbling, windowless, and doorless wall in the old mansion. The plaster is cracked, revealing brickwork beneath. The lighting is stark, highlighting the decay and emphasizing the enclosed, inescapable nature of the space."
+    },
+    {
+      "id": 64,
+      "text": "एक अजीब सी ठंडक महसूस होती,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of a large, empty, and cold-looking room in the mansion. The air appears visibly chilly, perhaps with a faint mist or breath-like vapor. The furniture is sparse and covered in dust sheets, enhancing the feeling of abandonment and supernatural cold."
+    },
+    {
+      "id": 65,
+      "text": "जैसे वहाँ की हवा जम गई हो।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up detail of a single breath fogging in the cold, still air of the mansion's interior, implying extreme cold. The background is blurred, showing only vague, dark shapes of the old room. The mood is eerie and unnerving, despite the lack of a character."
+    },
+    {
+      "id": 66,
+      "text": "उसने हवेली के पुराने कागज़ात खँगालना शुरू किए,",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, late 20s-early 30s, with a stressed face, leaning over a dusty, antique wooden desk. He is sifting through a pile of yellowed, brittle papers and old documents, his brow furrowed in concentration. A single flickering oil lamp provides warm, but limited, light."
+    },
+    {
+      "id": 67,
+      "text": "यह जानने के लिए कि क्या इस",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Detail shot of Ravi's hands, lean and slightly trembling, carefully handling a stack of fragile, old papers. The papers are discolored and appear very old, with faded script. The lighting is dim, emphasizing the delicate nature of the historical documents."
+    },
+    {
+      "id": 68,
+      "text": "जगह का कोई अजीब इतिहास रहा है।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, late 20s-early 30s, looking up from the old documents with a thoughtful and slightly troubled expression. He is surrounded by the cluttered, dusty desk in the mansion, illuminated by a soft, warm glow from a nearby lamp, creating an introspective mood."
+    },
+    {
+      "id": 69,
+      "text": "उसे एक पुरानी, चमड़े की जिल्द वाली डायरी मिली,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Detail shot of Ravi's hands discovering an old, leather-bound diary amongst the papers. The diary looks ancient, with a worn, dark cover and tarnished clasp. The lighting is focused on the diary, highlighting its age and importance."
+    },
+    {
+      "id": 70,
+      "text": "जिसके पन्ने पीले पड़ चुके थे।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up shot of the diary's pages, yellowed and brittle with age. The script is faded but legible, showing handwritten entries. The texture of the old paper is prominent, and the dim, soft light adds to the sense of antiquity and forgotten stories."
+    },
+    {
+      "id": 71,
+      "text": "यह डायरी वृंदा देवी की थी,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, late 20s-early 30s, holding the open diary, his face illuminated by the soft light of a desk lamp. His expression is one of dawning realization and concern as he reads the entries, creating a serious and contemplative mood."
+    },
+    {
+      "id": 72,
+      "text": "जो रवि के दादाजी से पहले",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion's exterior, 'Shanti Niketan,' during the day. It's an imposing, old-fashioned building with decaying walls and overgrown foliage, conveying a sense of history and neglect. The overall mood is quiet but subtly foreboding."
+    },
+    {
+      "id": 73,
+      "text": "इस हवेली में रहती थीं।",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, late 20s-early 30s, still engrossed in the diary. The background shows the interior of the mansion, with its antique furniture and old-world charm, hinting at the generations who lived there before him. The lighting is somber."
+    },
+    {
+      "id": 74,
+      "text": "डायरी की शुरुआती प्रविष्टियाँ सामान्य थीं,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up of the diary, open to an early page with neat, flowing handwriting. The entries appear mundane and calm, reflecting a normal life. The page is slightly yellowed, but the script is clear, conveying a sense of normalcy before the strange events."
+    },
+    {
+      "id": 75,
+      "text": "लेकिन जैसे-जैसे पन्ने पलटते गए, प्रविष्टियाँ अजीब होती गईं।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Detail shot of Ravi's fingers slowly turning the yellowed pages of the diary. As the pages turn, the handwriting becomes more erratic and frantic, hinting at a shift in the author's state of mind. The lighting is dim, creating a sense of growing unease."
+    },
+    {
+      "id": 76,
+      "text": "वृंदा देवी ने अपनी डायरी में 'अदृश्य उपस्थिति' और",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on a specific diary entry, where words like 'अदृश्य उपस्थिति' (invisible presence) are highlighted or appear more starkly written. The script is now slightly shaky, conveying fear and urgency. The background is blurred, focusing solely on the chilling words."
+    },
+    {
+      "id": 77,
+      "text": "'दीवार पर नाचती परछाई' का ज़िक्र किया था।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on another diary entry, where 'दीवार पर नाचती परछाई' (shadow dancing on the wall) is clearly visible. The handwriting is more distressed. The lighting is dim, casting a subtle shadow over the page, adding to the eerie atmosphere."
+    },
+    {
+      "id": 78,
+      "text": "उन्होंने लिखा था कि कैसे परछाई",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, late 20s-early 30s, reading the diary with wide, frightened eyes. His face is pale, and his brow is deeply furrowed with fear and recognition. The room is dimly lit, enhancing the dramatic tension as he absorbs the terrifying account."
+    },
+    {
+      "id": 79,
+      "text": "उन्हें रात-रात भर सोने नहीं देती,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Silhouette shot of Ravi, late 20s-early 30s, standing by a window at night, looking out into darkness. The faint outline of a disturbing, elongated shadow is projected onto the wall behind him, hinting at the diary's content coming to life. The mood is deeply unsettling."
+    },
+    {
+      "id": 80,
+      "text": "कैसे वह उनके दिमाग में घुसपैठ करती है।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Low angle shot, looking up at Ravi's face, late 20s-early 30s, contorted in a silent scream or expression of intense mental anguish, as if something is invading his mind. The background is dark and indistinct, emphasizing his isolation and terror."
+    },
+    {
+      "id": 81,
+      "text": "अंतिम प्रविष्टि आधी लिखी हुई थी,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up detail of the diary, open to its final, unfinished entry. The words are scattered, almost illegible, and trail off mid-sentence, indicating a sudden, terrifying interruption. The page is heavily yellowed and stained, adding to the sense of dread."
+    },
+    {
+      "id": 82,
+      "text": "जिसमें सिर्फ़ बिखरे हुए शब्द थे",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Extreme close-up on the fragmented words 'वह आ गई है...' (She has come...) on the diary page. The handwriting is desperate and shaky, conveying immense fear and a sense of impending doom. The lighting is harsh and dramatic, highlighting the chilling message."
+    },
+    {
+      "id": 83,
+      "text": "\"वह आ गई है...मुझे निगल रही है...",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the chilling words 'मुझे निगल रही है...' (is devouring me...) on the diary page, written in a frantic, almost scratched-out hand. The paper looks torn at the edges, reflecting the author's struggle. The mood is one of profound terror."
+    },
+    {
+      "id": 84,
+      "text": "मैं अब और नहीं...",
+      "words": 4,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the desperate phrase 'मैं अब और नहीं...' (I can't anymore...) on the diary page, with ink smudges suggesting tears or frantic movement. The text is barely legible, conveying a last, desperate cry for help. The lighting is dim and oppressive."
+    },
+    {
+      "id": 85,
+      "text": "अंधेरा...।\" रवि के रोंगटे खड़े हो गए।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on the final, stark word 'अंधेरा...' (darkness...) on the diary page, followed by an abrupt, empty space. Ravi's hand, late 20s-early 30s, is visible, trembling slightly as he holds the page. His skin has goosebumps, visible in the dim light."
+    },
+    {
+      "id": 86,
+      "text": "यह सब कुछ वैसा ही था,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, late 20s-early 30s, looking up from the diary with a horrified, wide-eyed expression. The diary is clutched in his hand. The background shows the dimly lit, unsettling interior of the mansion, emphasizing his isolation and growing terror."
+    },
+    {
+      "id": 87,
+      "text": "जैसा वह खुद अनुभव कर रहा था।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi, late 20s-early 30s, standing in the middle of a large, empty room in the mansion, his posture tense and fearful. He looks around frantically, as if sensing an unseen presence. The room is dark, with only slivers of moonlight entering, creating a stark, fearful atmosphere."
+    },
+    {
+      "id": 88,
+      "text": "अब रवि के लिए यह सिर्फ़ कल्पना नहीं थी।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, late 20s-early 30s, looking into a dark, empty corridor. His face is etched with profound fear and paranoia. The corridor is deep in shadow, enhancing the feeling of unseen threats and psychological torment. The mood is intensely suspenseful."
+    },
+    {
+      "id": 89,
+      "text": "वह हर पल महसूस करता कि",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi's face, late 20s-early 30s, pale and gaunt, with dark circles under his eyes. He is looking directly at the camera with an expression of intense paranoia and fear, as if he feels constantly watched. The lighting is dim and unsettling."
+    },
+    {
+      "id": 90,
+      "text": "कोई उसे देख रहा है,",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a slightly open door crack, with a sliver of darkness visible through it, implying someone or something is lurking just out of sight. The focus is on the unsettling gap, creating a sense of being observed from unseen places. The mood is one of intense dread."
+    },
+    {
+      "id": 91,
+      "text": "उसकी हर हरकत पर नज़र रख रहा है।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his face etched with paranoia, glancing over his shoulder with wide, fearful eyes in a dimly lit, cluttered study of the old mansion. Dust motes dance in the weak light filtering from a single window. The camera emphasizes his stressed expression and the feeling of being watched."
+    },
+    {
+      "id": 92,
+      "text": "उसकी रातों की नींद पूरी तरह उड़ चुकी थी।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's bloodshot eyes, staring blankly ahead in the dark, his face illuminated only by the faint glow of a phone screen held just out of frame. The room around him is swallowed by shadows, highlighting his sleeplessness and exhaustion. The mood is one of profound weariness and dread."
+    },
+    {
+      "id": 93,
+      "text": "वह जागते हुए भी सपनों और हकीकत",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot looking past Ravi's head at a distorted reflection of his own panicked face in a grimy, antique mirror. The reflection seems slightly out of sync, emphasizing his confusion between reality and hallucination. The room is dark and unsettling."
+    },
+    {
+      "id": 94,
+      "text": "के बीच का फ़र्क़ भूलने लगा था।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Low-angle shot of Ravi clutching his head, sitting on the floor in a dimly lit, empty hallway of the mansion. The long, dark shadows stretch around him, making him appear small and vulnerable against the imposing walls. The atmosphere is one of mental collapse."
+    },
+    {
+      "id": 95,
+      "text": "परछाई अब सिर्फ़ गलियारे में नहीं,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of a long, dark corridor in the mansion, illuminated only by a sliver of moonlight from an unseen window. A faint, elongated shadow of a human figure stretches across the far wall, barely discernible but unsettling. The mood is eerie and suspenseful."
+    },
+    {
+      "id": 96,
+      "text": "बल्कि उसके कमरे में भी दीवारों पर नाचने लगी थी।",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of Ravi's bedroom wall, where a distinct, dancing shadow of an ethereal, thin human figure is cast by an unknown light source. The room is sparsely furnished, emphasizing the focus on the menacing shadow. The lighting is dim and flickering, creating a sense of unease."
+    },
+    {
+      "id": 97,
+      "text": "कभी वह खिड़की के पास से गुज़रती,",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a dusty, ornate window frame in the mansion, with the silhouette of the thin, elongated shadow briefly passing by outside. The light is low, highlighting the intricate details of the old wood, and the mood is one of fleeting dread."
+    },
+    {
+      "id": 98,
+      "text": "कभी दरवाज़े के नीचे से झाँकती।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot looking up at a heavy, old wooden door, slightly ajar, with the bottom sliver of the thin, dark shadow visible peeking from underneath. The hallway beyond is dark, and the scene is lit by a faint, unsettling glow, creating a sense of intrusion."
+    },
+    {
+      "id": 99,
+      "text": "वह अब बस एक अस्पष्ट आकृति नहीं थी,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of a dark corner in Ravi's room, where the shadow now appears as a deeper, more defined void, almost three-dimensional, without any discernible features but radiating an intense sense of emptiness. The lighting is minimal, enhancing its terrifying presence."
+    },
+    {
+      "id": 100,
+      "text": "बल्कि एक गहरे, भयानक शून्य जैसी दिखने लगी थी।",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the 'shadow' itself, depicted as a swirling, inky black void that seems to absorb all light around it, with no clear edges, creating a sense of profound, terrifying nothingness. The background is completely dark, emphasizing its menacing nature."
+    },
+    {
+      "id": 101,
+      "text": "रवि ने डर के मारे हवेली",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his face contorted in terror, frantically packing a small bag in his messy bedroom. His movements are rushed and desperate, under the dim, flickering light of a single bulb. The room feels claustrophobic and urgent."
+    },
+    {
+      "id": 102,
+      "text": "से भागने का फैसला किया।",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi, looking small and defeated, dragging his suitcase down the grand, decaying staircase of the mansion towards the main door. The mansion looms around him, dark and foreboding, with long shadows stretching from unseen corners. The mood is desperate escape."
+    },
+    {
+      "id": 103,
+      "text": "अगले दिन सुबह, उसने अपनी कार निकाली,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi in the mansion's overgrown driveway, opening the driver's side door of his dusty, old car. The morning light is dull and overcast, hinting at the impending storm. He looks weary but determined to leave."
+    },
+    {
+      "id": 104,
+      "text": "लेकिन चाबी घुमाने पर भी इंजन स्टार्ट नहीं हुआ।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Detail shot of Ravi's hand desperately turning the ignition key in his car. The dashboard lights are off, and the key simply clicks without the engine turning over. His knuckles are white, showing his frustration and mounting panic."
+    },
+    {
+      "id": 105,
+      "text": "कितनी भी कोशिश की, कार टस से मस नहीं हुई।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's strained face, beads of sweat forming on his brow, as he repeatedly tries to start the car, his expression a mix of anger and despair. The car's interior is dark and oppressive, reflecting his trapped state."
+    },
+    {
+      "id": 106,
+      "text": "ठीक उसी समय, आसमान में काले बादल घिर आए और",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion's exterior, seen from a low angle, as dark, ominous storm clouds gather rapidly overhead, turning the sky a deep, bruised purple. The ancient trees surrounding the mansion begin to sway violently. The atmosphere is foreboding."
+    },
+    {
+      "id": 107,
+      "text": "एक भयंकर तूफ़ान शुरू हो गया।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion engulfed by the raging storm. Torrential rain lashes down, obscuring the view, and a jagged lightning bolt illuminates the decaying facade for a split second, emphasizing its sinister appearance. The scene is chaotic and powerful."
+    },
+    {
+      "id": 108,
+      "text": "तेज़ हवाएँ चल रही थीं, बिजली कड़क रही थी,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of heavy rain streaming down a grimy windowpane in the mansion, distorted by the strong wind. A flash of lightning briefly illuminates the scene, revealing the furious storm outside. The mood is intense and isolating."
+    },
+    {
+      "id": 109,
+      "text": "और मूसलाधार बारिश हो रही थी।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the rain-soaked ground outside the mansion, with puddles rapidly forming and reflecting the dark, stormy sky. The scene emphasizes the relentless downpour and the isolation of the location. The mood is bleak and hopeless."
+    },
+    {
+      "id": 110,
+      "text": "गाँव से संपर्क टूट गया,",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Detail shot of Ravi's mobile phone screen, completely black and unresponsive, lying on a dusty wooden table. The lack of signal bars emphasizes his complete cut-off from the outside world. The surrounding objects are dark and indistinct."
+    },
+    {
+      "id": 111,
+      "text": "और उसका मोबाइल फोन भी बंद हो गया।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot of Ravi, his back to the camera, looking out a rain-streaked window at the now completely dark and isolated village beyond. The lights of the village are gone, and he holds his dead phone uselessly. His posture conveys despair."
+    },
+    {
+      "id": 112,
+      "text": "रवि हवेली में फँस गया था।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, trapped inside the mansion's main hall, looking utterly defeated. The grand, decaying architecture of the mansion seems to press in on him, making him appear small and imprisoned. The lighting is dim and oppressive."
+    },
+    {
+      "id": 113,
+      "text": "उसे लगा जैसे हवेली उसे जाने नहीं देना चाहती,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot of the mansion's imposing main entrance, with heavy, carved wooden doors that seem to seal themselves shut. The dark, aged wood and intricate details suggest an ancient, malevolent will. The atmosphere is one of being held captive."
+    },
+    {
+      "id": 114,
+      "text": "जैसे वह उसे अपने अंदर खींच रही हो।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi standing in the center of a vast, dimly lit hall, surrounded by the mansion's towering walls and high ceilings. The shadows stretch long and deep, making the space feel like a gaping maw, slowly consuming him. The mood is overwhelming dread."
+    },
+    {
+      "id": 115,
+      "text": "रात हो चुकी थी, और बिजली भी चली गई थी।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of the mansion's interior at night, plunged into complete darkness, save for a single, flickering candle held by Ravi. The vastness of the shadows and the ancient architecture are barely visible, creating an intensely eerie atmosphere."
+    },
+    {
+      "id": 116,
+      "text": "रवि मोमबत्ती की रोशनी में काँप रहा था।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up on Ravi's trembling hands holding a small, flickering candle, his face illuminated from below, showing extreme fear and anxiety. The shadows dance wildly around his features, exaggerating his terror. The mood is one of vulnerable despair."
+    },
+    {
+      "id": 117,
+      "text": "हवेली की हर आवाज़ अब एक",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of an old, creaking wooden floorboard in the mansion, with a faint, unsettling tremor running through it, as if something heavy is moving beneath. The lighting is low, emphasizing the aged, worn texture of the wood."
+    },
+    {
+      "id": 118,
+      "text": "डरावना रूप ले चुकी थी।",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of a dark, empty doorway in the mansion, through which a chilling, almost guttural whisper seems to emanate. The shadows are deep and impenetrable, creating a sense of unseen horror. The atmosphere is intensely unsettling."
+    },
+    {
+      "id": 119,
+      "text": "हवा के झोंके नहीं थे, बल्कि चीख़ें थीं।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on a tattered, old curtain swaying violently in an unseen draft, but the movement is too erratic and strong to be just wind, suggesting a malevolent presence. The fabric is dark and decaying, adding to the macabre feel."
+    },
+    {
+      "id": 120,
+      "text": "दरवाज़ों की चरमराहट नहीं थी,",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of a heavy, ornate wooden door handle slowly turning on its own, with a faint, drawn-out creaking sound. The wood is dark and aged, and the lighting is minimal, creating a sense of dread and supernatural activity."
+    },
+    {
+      "id": 121,
+      "text": "बल्कि भारी कदमों की आवाज़ें थीं।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot of a grand, decaying wooden staircase in 'Shanti Niketan', casting long, eerie shadows. Dust motes dance in the faint light filtering from an unseen source. The mood is oppressive and unsettling, hinting at heavy, unseen footsteps ascending the creaking stairs. The architecture is old Indian mansion style."
+    },
+    {
+      "id": 122,
+      "text": "अचानक, कमरे में मोमबत्ती की लौ तेज़ी से नाचने लगी,",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up detail shot of a single flickering candle flame on a dusty wooden table. The flame dances wildly, casting erratic shadows on the wall behind it, defying the stillness of the room. The lighting is dim and unstable, creating a sense of impending dread. The mood is tense and foreboding."
+    },
+    {
+      "id": 123,
+      "text": "और फिर बुझ गई। रवि पूरी तरह अँधेरे में था।",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his face etched with terror, as the candle flame on the table suddenly extinguishes. He is plunged into complete darkness, his eyes wide and disoriented. The room is now an oppressive void, lit only by the faintest hint of moonlight from an unseen window. The mood is terrifying and claustrophobic."
+    },
+    {
+      "id": 124,
+      "text": "कमरे में एक असहनीय ठंडक फैल गई,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot looking past Ravi's hunched form into the pitch-black room. A visible, icy mist or 'cold breath' emanates from the center of the room, swirling ominously. The only light comes from the faint, distant moonlight, highlighting the chilling atmosphere. The mood is one of extreme, supernatural cold."
+    },
+    {
+      "id": 125,
+      "text": "इतनी कि उसकी साँसें जमने लगीं।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's face, his breath visible as small clouds of vapor in the frigid air. His eyes are wide with fear, and his body is visibly trembling. The lighting is extremely low, emphasizing the chill and his terror. The mood is intensely frightening and physically distressing."
+    },
+    {
+      "id": 126,
+      "text": "उसे लगा, जैसे कोई उसके ठीक सामने खड़ा है।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his body rigid and frozen in fear, staring directly ahead into the oppressive darkness. His posture suggests an unseen presence standing directly in front of him. The room is almost entirely dark, amplifying the sense of unseen menace. The mood is petrified and helpless."
+    },
+    {
+      "id": 127,
+      "text": "उसने अपनी आँखें बड़ी करके अँधेरे",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Extreme close-up on Ravi's eyes, wide and bloodshot, straining to penetrate the absolute darkness before him. His brow is furrowed with desperate concentration and fear. Only his eyes are clearly visible, reflecting the oppressive blackness. The mood is one of intense, fearful searching."
+    },
+    {
+      "id": 128,
+      "text": "में देखने की कोशिश की,",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Silhouette shot of Ravi, his head slightly tilted and eyes squinting, attempting to discern any shape or movement in the profound darkness of the room. The faint outline of his figure is barely visible against the deeper blackness of the background. The mood is one of desperate, failing perception."
+    },
+    {
+      "id": 129,
+      "text": "लेकिन सिर्फ़ गहरा, काला अँधेरा था।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the entire room, completely enveloped in an inky, suffocating darkness. No discernible objects or details are visible, just an oppressive void that seems to absorb all light. The mood is utterly hopeless and isolating, emphasizing the absence of light and safety."
+    },
+    {
+      "id": 130,
+      "text": "फिर धीरे-धीरे, कमरे की दीवार पर वह परछाई उभरने लगी।",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of a dusty, peeling wall in Ravi's room. Slowly, a faint, dark human-like shadow begins to materialize on the surface, its edges still soft and indistinct. The only light source is an ethereal, cold glow emanating from the shadow itself. The mood is chilling and supernatural."
+    },
+    {
+      "id": 131,
+      "text": "इस बार वह अस्पष्ट नहीं थी,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up detail of the emerging shadow on the wall. Its form is becoming sharper, less ambiguous, with distinct outlines of a gaunt, elongated figure. The lighting is an unnatural, sickly grey, highlighting the distinctness of the shadow. The mood is one of growing, undeniable terror."
+    },
+    {
+      "id": 132,
+      "text": "बल्कि पूरी तरह से साफ़ थी एक मानव आकृति,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of the wall, now clearly displaying a distinct, human-shaped shadow. It is tall and slender, with a chillingly defined profile, yet it lacks any internal features. The shadow appears solid, a void against the dimly lit wall. The mood is one of stark, horrifying realization."
+    },
+    {
+      "id": 133,
+      "text": "लेकिन किसी शरीर के बिना, सिर्फ़ एक गहरे,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot focusing on the 'body' of the shadow. It is a pure, absolute blackness, a gaping void that seems to absorb all light, with no texture or features. The wall behind it is barely visible, giving the impression of an entity made of nothingness. The mood is profoundly unsettling and unnatural."
+    },
+    {
+      "id": 134,
+      "text": "खालीपन से बनी हुई।",
+      "words": 4,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the room, with the fully formed, empty-bodied shadow now prominently displayed on the wall. It stands tall and menacing, a stark contrast to the decaying grandeur of the mansion. The lighting is dim, emphasizing the shadow's dark presence. The mood is deeply ominous and terrifying."
+    },
+    {
+      "id": 135,
+      "text": "वह हिल रही थी, जैसे नाच रही हो,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Medium shot of the shadow on the wall. It is subtly shifting and swaying, almost like a slow, macabre dance, its form elongating and contracting slightly. The effect is fluid and unnatural, indicating a malevolent sentience. The mood is eerie and hypnotic, drawing the viewer in."
+    },
+    {
+      "id": 136,
+      "text": "और फिर धीरे-धीरे रवि की ओर बढ़ने लगी।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Tracking shot, low angle, as the shadow on the wall slowly begins to detach itself from the surface, subtly moving forward into the room, towards an unseen Ravi. The movement is smooth and deliberate, a silent, menacing glide. The mood is one of unstoppable, encroaching horror."
+    },
+    {
+      "id": 137,
+      "text": "रवि का दिल तेज़ी से धड़क रहा था,",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's chest, his shirt visibly vibrating with the frantic, rapid pounding of his heart. The sound of his heartbeat is almost palpable, reflecting his extreme terror. His hand is clutched to his chest. The lighting is dim, focusing on the physical manifestation of fear."
+    },
+    {
+      "id": 138,
+      "text": "जैसे सीने से बाहर आ जाएगा।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, hunched over, clutching his chest, his mouth open in a silent scream. His eyes are wide with terror, fixed on something just out of frame. The mood is one of overwhelming panic and physical distress, on the verge of collapse."
+    },
+    {
+      "id": 139,
+      "text": "उसके मुँह से कोई आवाज़ नहीं निकली।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's mouth, agape and trembling, but no sound escapes. His throat muscles are strained, indicating a desperate, failed attempt to scream. The lighting is low, highlighting the silent horror on his face. The mood is one of utter helplessness and voiceless terror."
+    },
+    {
+      "id": 140,
+      "text": "वह हिल भी नहीं पा रहा था।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of Ravi, his entire body frozen in place, like a statue. He is rigid, unable to move, his eyes locked on the approaching shadow. The room is dark, emphasizing his isolation and paralysis. The mood is one of complete physical and psychological entrapment."
+    },
+    {
+      "id": 141,
+      "text": "परछाई अब उसके बहुत करीब आ गई थी,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot, looking up at the towering shadow as it looms directly over Ravi. Its form is immense and suffocating, dominating the frame. The darkness of the shadow is absolute, creating a sense of being consumed. The mood is one of overwhelming dread and impending doom."
+    },
+    {
+      "id": 142,
+      "text": "इतनी करीब कि रवि को लगा",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot, looking past Ravi's head at the shadow, which is now incredibly close, almost touching him. The shadow's edges are sharp and menacing, conveying its proximity. The dim lighting emphasizes the close encounter. The mood is intensely confrontational and terrifying."
+    },
+    {
+      "id": 143,
+      "text": "जैसे वह उसे छू रही है।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up of the shadow's 'hand' or ethereal edge, appearing to reach out and almost brush Ravi's shoulder. The effect is subtle, a non-physical touch, creating an unsettling ripple in the air around it. The mood is one of chilling, supernatural contact."
+    },
+    {
+      "id": 144,
+      "text": "यह कोई भौतिक स्पर्श नहीं था,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of the air around where the shadow 'touched' Ravi. No physical contact is visible, but the air shimmers with an unnatural coldness, almost visible as a frosty haze. The atmosphere is thick with an unseen, chilling force. The mood is one of ethereal, non-physical horror."
+    },
+    {
+      "id": 145,
+      "text": "बल्कि एक ऐसी ठंडक थी,",
+      "words": 5,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's skin, visibly covered in goosebumps, his lips turning slightly blue from the extreme, unnatural cold. His expression is one of profound shock and physical distress. The lighting is dim and cold, enhancing the chilling effect. The mood is one of bone-deep, supernatural freeze."
+    },
+    {
+      "id": 146,
+      "text": "जो उसकी आत्मा तक को जमा रही थी।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, shivering uncontrollably, clutching himself as if trying to hold onto his very being. The cold seems to emanate from within him, suggesting his soul is being affected. The room is dark, adding to his isolation. The mood is one of spiritual and physical torment."
+    },
+    {
+      "id": 147,
+      "text": "परछाई ने उसे घेरना शुरू कर दिया, जैसे एक काला,",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Wide shot of the room, as the shadow expands rapidly, like a vast, dark shroud, engulfing Ravi. The shadow is a swirling vortex of blackness, consuming the space around him. Ravi is a small, helpless figure within its growing expanse. The mood is one of overwhelming, consuming terror."
+    },
+    {
+      "id": 148,
+      "text": "विशालकाय कपड़ा उसे अपनी चपेट में ले रहा हो।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: High-angle shot looking down at Ravi, who is now almost completely enveloped by the expanding, dark shadow. Only a small part of his head or hand is still visible, rapidly being swallowed by the inky blackness. The shadow appears like a giant, predatory cloak. The mood is one of final, inevitable absorption."
+    },
+    {
+      "id": 149,
+      "text": "रवि ने चीख़ने की कोशिश की,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Close-up of Ravi's face, contorted in a silent scream. His mouth is wide open, his eyes bulging with terror, but no sound escapes. A single tear might be visible. The lighting is dim, highlighting his desperate struggle. The mood is one of intense, voiceless agony and despair."
+    },
+    {
+      "id": 150,
+      "text": "लेकिन उसके गले से सिर्फ़ एक दबी हुई सिसकी निकली।",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Detail shot of Ravi's throat, taut and straining, as a faint, choked sob or whimper escapes. The sound is barely audible, a desperate, dying gasp. The skin is pale and translucent in the low light, emphasizing his fading vitality. The mood is one of profound, tragic loss and finality."
+    },
+    {
+      "id": 151,
+      "text": "उसे लगा, जैसे वह धीरे-धीरे ग़ायब होता जा रहा है,",
+      "words": 10,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A low-angle, abstract shot of Ravi's body as it seems to dissipate into thin, dark wisps, his form becoming translucent against the oppressive darkness of the room. A chilling, ethereal glow outlines his fading silhouette, conveying a sense of vanishing existence. The mood is terrifying and surreal."
+    },
+    {
+      "id": 152,
+      "text": "उसका अस्तित्व मिटता जा रहा है।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up, slightly distorted shot of Ravi's face, eyes wide with terror and disbelief, his features blurring as if dissolving. The lighting is dim, with faint, ghostly hints of the encroaching darkness consuming him. The mood is utterly hopeless and horrifying."
+    },
+    {
+      "id": 153,
+      "text": "एक पल के लिए उसे लगा कि वह वृंदा",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A detail shot of a tattered, yellowed page from Vrinda Devi's diary, illuminated by a faint, flickering light. The last few lines are visible, showing fragmented, desperate words, conveying a sense of urgent, terrifying revelation. The mood is eerie and foreboding."
+    },
+    {
+      "id": 154,
+      "text": "देवी की अंतिम प्रविष्टि को समझ गया है।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: An extreme close-up of the final, half-written words in Vrinda Devi's diary, the ink smudged and faded, hinting at a sudden, violent end. The paper is old and brittle, with a subtle, ominous shadow cast over it. The mood is chilling and revelatory."
+    },
+    {
+      "id": 155,
+      "text": "फिर सब कुछ अँधेरे में डूब गया,",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A wide shot of Ravi's room plunging into absolute darkness. The last flicker of the candle has just died, leaving only an inky blackness that seems to press in from all sides. The camera is slightly tilted, enhancing the feeling of disorientation. The mood is suffocating and terrifying."
+    },
+    {
+      "id": 156,
+      "text": "और एक भयानक शून्य ने उसे पूरी तरह निगल लिया।",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: An abstract, swirling vortex of deep, impenetrable blackness filling the frame, symbolizing the 'horrible void'. There are no discernible objects, just the overwhelming presence of nothingness that seems to swallow everything. The mood is utterly consuming and final."
+    },
+    {
+      "id": 157,
+      "text": "रवि को पता नहीं कब होश आया।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A medium shot of Ravi lying on the floor, seemingly unconscious, in the dimly lit room. Moonlight streams faintly through a window, casting long, soft shadows. He appears disoriented, his expression confused as he slowly stirs. The mood is unsettling and mysterious."
+    },
+    {
+      "id": 158,
+      "text": "उसे अजीब सा महसूस हो रहा था,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: An over-the-shoulder shot looking down at Ravi as he attempts to push himself up from the floor. His movements are slow and uncoordinated, his face showing a strange, weightless sensation. The room is still, bathed in faint moonlight. The mood is disoriented and ethereal."
+    },
+    {
+      "id": 159,
+      "text": "जैसे वह हल्का हो गया हो,",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up of Ravi's hand as he tries to grasp his own arm, but his fingers seem to pass through with a faint, shimmering effect. The hand appears almost translucent against the dim light, emphasizing a feeling of detachment. The mood is surreal and perplexing."
+    },
+    {
+      "id": 160,
+      "text": "जैसे उसका कोई वज़न ही न हो।",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A full body shot of Ravi standing, but appearing strangely light and almost floating, his clothes barely rustling. The moonlight from the window illuminates his almost translucent form, creating an uncanny effect. The mood is ghostly and bewildering."
+    },
+    {
+      "id": 161,
+      "text": "उसने कमरे में देखा। मोमबत्ती बुझी हुई थी,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A detail shot of a burnt-out candle on a dusty table, its wick a charred stub. Moonlight streams in from a nearby window, casting a stark contrast between the darkness and the faint illumination. The mood is quiet and somber."
+    },
+    {
+      "id": 162,
+      "text": "लेकिन चाँदनी खिड़की से अंदर आ रही थी।",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A wide shot of the room, bathed in soft, silvery moonlight pouring through a large, arched window. The shadows are long and dancing, creating a serene yet eerie atmosphere. The old furniture is visible, covered in a fine layer of dust. The mood is tranquil but subtly unsettling."
+    },
+    {
+      "id": 163,
+      "text": "कमरे में सब कुछ वैसा ही था,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A medium shot of Ravi looking around the room, his eyes scanning familiar objects like his writing desk and an old bookshelf. Everything appears to be in its usual place, but his expression shows a growing unease. The moonlight highlights dust motes in the air. The mood is observant and tense."
+    },
+    {
+      "id": 164,
+      "text": "लेकिन एक बदलाव था।",
+      "words": 4,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A slow, panning shot across the room, focusing on a specific, subtle detail that is out of place or altered, perhaps a slightly moved curtain or a book on the floor. The moonlight catches the dust, making the air seem heavy with unseen presence. The mood is subtly disquieting."
+    },
+    {
+      "id": 165,
+      "text": "उसके बिस्तर पर, एक आदमी लेटा हुआ था,",
+      "words": 8,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: An eye-level shot of the bed in Ravi's room. A figure resembling Ravi is lying motionless on it, covered by a sheet, his face obscured slightly by shadow. The moonlight casts a gentle glow on the scene. The mood is mysterious and unsettling."
+    },
+    {
+      "id": 166,
+      "text": "जो ठीक रवि जैसा लग रहा था।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A medium shot, slightly from above, showing the figure on the bed. The face is clearly visible now, identical to Ravi's, but with a peaceful, vacant expression. The lighting is soft moonlight, creating an almost angelic yet deeply disturbing image. The mood is uncanny and eerie."
+    },
+    {
+      "id": 167,
+      "text": "रवि ने उस आदमी को छूने की कोशिश की,",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up of a translucent, shimmering hand, clearly Ravi's, reaching out towards the figure on the bed. The hand passes through the sheet and the body, creating a ripple effect in the air around it. The moonlight illuminates its ethereal quality. The mood is bewildered and desperate."
+    },
+    {
+      "id": 168,
+      "text": "लेकिन उसका हाथ आर-पार हो गया।",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A detail shot showing Ravi's translucent hand passing completely through the arm of the figure on the bed. The bedsheets and the figure's clothes are undisturbed, emphasizing the non-physical interaction. The moonlight highlights the spectral nature of Ravi's hand. The mood is shocking and surreal."
+    },
+    {
+      "id": 169,
+      "text": "उसे समझ नहीं आया कि क्या हो रहा है।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up of Ravi's face, his eyes wide with utter confusion and dawning horror. His expression is one of profound disbelief and terror as he tries to process what just happened. The moonlight casts long, stark shadows across his features. The mood is desperate and terrifying."
+    },
+    {
+      "id": 170,
+      "text": "तभी, दरवाज़ा खुला और एक नया आदमी अंदर आया,",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A medium shot of the heavy, wooden door to Ravi's room slowly creaking open. A sliver of darkness from the hallway is visible, then a new figure begins to step inside. The only light is the moonlight from the window, casting deep shadows. The mood is suspenseful and foreboding."
+    },
+    {
+      "id": 171,
+      "text": "जिसके हाथ में सूटकेस थे।",
+      "words": 5,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A low-angle shot, focusing on the feet of the new man entering the room, carrying two vintage-style suitcases. The suitcases are old-fashioned, made of leather, suggesting a journey. The light is dim, highlighting the dust on the floor. The mood is mysterious and intriguing."
+    },
+    {
+      "id": 172,
+      "text": "वह चारों ओर देख रहा था,",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: An over-the-shoulder shot from behind the new man, looking into the room. He is standing just inside the doorway, head slightly tilted, surveying the old mansion's interior with a curious, perhaps slightly wary, expression. Moonlight illuminates the dust motes in the air. The mood is exploratory and expectant."
+    },
+    {
+      "id": 173,
+      "text": "जैसे पहली बार हवेली में आया हो।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A medium shot of the new man's face, a look of fresh curiosity mixed with a hint of apprehension as he takes in the old room. His eyes are wide, suggesting he's absorbing every detail as if seeing it for the first time. The moonlight casts a soft glow on his features. The mood is fresh and slightly tense."
+    },
+    {
+      "id": 174,
+      "text": "रवि ने आवाज़ देने की कोशिश की,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up of Ravi's mouth as he tries to speak, his lips moving silently, no sound escaping. His expression is one of frantic urgency, but his throat remains constricted. The moonlight creates stark contrasts on his face. The mood is desperate and helpless."
+    },
+    {
+      "id": 175,
+      "text": "लेकिन उसके गले से कोई आवाज़ नहीं निकली।",
+      "words": 8,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A wide, slightly blurred shot of Ravi, his form shimmering slightly, desperately trying to get the new man's attention. His arms are outstretched, but he remains unheard and unseen. The moonlight makes him appear ghostly against the solid objects. The mood is agonizingly futile."
+    },
+    {
+      "id": 176,
+      "text": "वह घबरा गया। वह कहाँ था?",
+      "words": 6,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A close-up of Ravi's eyes, wide with panic and a dawning realization of his new, terrifying existence. His gaze is unfocused, reflecting deep fear and confusion. The moonlight catches a single, unfallen tear. The mood is utterly despairing and horrified."
+    },
+    {
+      "id": 177,
+      "text": "वह कौन था? उसने सामने की दीवार पर देखा।",
+      "words": 9,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: A medium shot of Ravi, his head snapping towards the wall opposite him, a look of profound dread on his face. His form is slightly transparent, emphasizing his spectral state. The moonlight is bright on the wall he is staring at. The mood is intensely fearful."
+    },
+    {
+      "id": 178,
+      "text": "चाँदनी में, दीवार पर एक परछाई नाच रही थी।",
+      "words": 9,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A wide shot of the wall, illuminated by pure, stark moonlight. A deep, amorphous shadow is visible, undulating and expanding, like a dark, living entity beginning to manifest itself. The wall is old and slightly cracked, adding to the eerie atmosphere. The mood is chilling and ominous."
+    },
+    {
+      "id": 179,
+      "text": "एक गहरी, अस्पष्ट परछाई, जो धीरे-धीरे बिस्तर पर लेटे हुए",
+      "words": 10,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: A slow zoom-in on the shadow on the wall. It is becoming more defined, taking on a vaguely human shape but remaining utterly black and devoid of features, slowly stretching and moving towards the bed where the other Ravi lies. The moonlight highlights its terrifying presence. The mood is intensely menacing."
+    },
+    {
+      "id": 180,
+      "text": "आदमी की ओर बढ़ रही थी।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: An over-the-shoulder shot from behind the new man, as he looks towards the bed. In the foreground, the ominous shadow on the wall is clearly visible, creeping steadily towards the sleeping figure on the bed. The moonlight casts long, distorted shadows, creating a sense of inescapable dread. The mood is terrifying and cyclical."
+    },
+    {
+      "id": 181,
+      "text": "रवि ने खुद को दर्पण में देखा,",
+      "words": 7,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Medium shot of Ravi, his face etched with confusion and dawning horror, staring intently into an ornate, antique mirror in the mansion. The mirror's surface is dark and reflective, but shows no image of him. Soft moonlight from a nearby window casts long shadows, highlighting the dust motes in the air. The mood is unsettling and disorienting as Ravi grapples with his new reality."
+    },
+    {
+      "id": 182,
+      "text": "लेकिन वहाँ कोई प्रतिबिंब नहीं था।",
+      "words": 6,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Close-up on the antique mirror's surface, which is completely blank and dark, reflecting only the dim, dusty interior of the mansion room. There is no reflection of Ravi, creating a sense of absence and dread. The glass itself is old and slightly warped, hinting at the mansion's age and decay. The lighting is low, with a faint, cold moonlight filtering in."
+    },
+    {
+      "id": 183,
+      "text": "और फिर, उसने देखा...",
+      "words": 4,
+      "has_character": true,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Main character: Ravi is a young man, likely in his late 20s or early 30s, with a lean build, dark hair, and a tired, stressed face from city life. He typically wears casual, comfortable clothes suitable for writing, and his most distinctive feature is the persistent, worried furrow in his brow. Shot: Over-the-shoulder shot from behind Ravi, looking towards the opposite wall of the room. Ravi's back is visible, slightly hunched, his posture conveying a sense of profound shock and fear. The wall is old, peeling, and dimly lit by the faint moonlight. The mood is tense and foreboding, as if something unseen is about to be revealed."
+    },
+    {
+      "id": 184,
+      "text": "दीवार पर नाचती हुई एक नई परछाई...",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Wide shot of the mansion room, focusing on a large, prominent wall. On the wall, a new, distinct shadow figure is emerging and beginning to dance. This shadow is deep black and slightly amorphous, but clearly takes on a human-like form, distinct from the earlier, more vague 'Chhaya'. Moonlight casts eerie, shifting patterns across the room, enhancing the terror."
+    },
+    {
+      "id": 185,
+      "text": "जो धीरे-धीरे उसे निगलने को तैयार थी।",
+      "words": 7,
+      "has_character": false,
+      "image_prompt": "2D animated graphic-novel style, thick clean ink outlines, flat cel shading, muted desaturated green and teal color palette, moody cinematic lighting, highly detailed background, whole subject centered in frame, no text, no letters, no signs, no watermark. Shot: Low-angle shot, looking up at the wall where the new, dark shadow figure is now clearly visible, expanding and reaching out, appearing to slowly engulf the viewer. The shadow is a profound void, not merely an absence of light, but a consuming darkness. The old, decaying wall serves as a stark background, with very dim moonlight barely illuminating the edges of the room. The mood is one of ultimate, inescapable horror and submission."
+    }
+  ]
+}
