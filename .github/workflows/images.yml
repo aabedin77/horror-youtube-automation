@@ -5,7 +5,13 @@ on:
     inputs:
       max_images:
         description: "How many images to make in this run"
-        default: "12"
+        default: "40"
+      steps:
+        description: "Image quality steps 1-8 (4 = normal, more = slower and uses more quota)"
+        default: "4"
+      shots_date:
+        description: "Shots file date like 2026-10-21 (empty = newest)"
+        default: ""
 
 permissions:
   contents: write
@@ -13,161 +19,37 @@ permissions:
 jobs:
   images:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 50
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate images for scenes
+      - name: Check script file is complete
+        run: |
+          if ! grep -q "END_OF_FILE_MARKER" tools/make_images.py; then
+            echo "tools/make_images.py is cut off. Paste it again completely."
+            exit 1
+          fi
+          python3 -m py_compile tools/make_images.py
+
+      - name: Make images
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           MAX_IMAGES: ${{ github.event.inputs.max_images }}
-        run: |
-          python3 - <<'PY'
-          import os, json, glob, sys, time, base64
-          import urllib.request, urllib.error
+          STEPS: ${{ github.event.inputs.steps }}
+          SHOTS_DATE: ${{ github.event.inputs.shots_date }}
+        run: python3 tools/make_images.py
 
-          acct = os.environ["CF_ACCOUNT_ID"].strip()
-          token = os.environ["CF_API_TOKEN"].strip()
-          try:
-              max_images = int(os.environ.get("MAX_IMAGES") or 12)
-          except ValueError:
-              max_images = 12
-
-          model = "@cf/black-forest-labs/flux-1-schnell"
-          url = ("https://api.cloudflare.com/client/v4/accounts/"
-                 + acct + "/ai/run/" + model)
-
-          files = sorted(glob.glob("scenes/horror-*.json"))
-          if not files:
-              sys.exit("ERROR: no scenes file found")
-          src = files[-1]
-          data = json.load(open(src, encoding="utf-8"))
-          date = data["date"]
-          scenes = data["scenes"]
-
-          outdir = f"images/{date}"
-          os.makedirs(outdir, exist_ok=True)
-
-          STYLE = ("2D animated graphic-novel style, thick clean ink "
-                   "outlines, flat cel shading, muted desaturated green "
-                   "and teal color palette, moody cinematic lighting, "
-                   "detailed background, subject centered in frame, "
-                   "no text, no letters, no signs, no watermark. ")
-
-          def build_prompt(sc, with_char=True):
-              p = sc["image_prompt"]
-              scene_part = p.split("Scene:", 1)[-1].strip()
-              char = ""
-              if "Main character:" in p and "Scene:" in p:
-                  char = p.split("Main character:", 1)[1].split("Scene:", 1)[0].strip()
-              if with_char and char:
-                  return STYLE + "Main character: " + char + " Scene: " + scene_part
-              return STYLE + scene_part
-
-          def generate(prompt):
-              payload = {"prompt": prompt[:1900], "steps": 4}
-              req = urllib.request.Request(
-                  url,
-                  data=json.dumps(payload).encode(),
-                  headers={
-                      "Content-Type": "application/json",
-                      "Authorization": "Bearer " + token,
-                      "User-Agent": "horror-automation/1.0",
-                  },
-              )
-              with urllib.request.urlopen(req, timeout=120) as r:
-                  d = json.loads(r.read())
-              return base64.b64decode(d["result"]["image"])
-
-          created, failed, skipped = 0, [], 0
-          errors, times = [], []
-          quota_hit = False
-          stopped_by_cap = False
-          t_start = time.time()
-
-          for sc in scenes:
-              sid = sc["id"]
-              path = f"{outdir}/scene-{sid:02d}.jpg"
-              if os.path.exists(path) and os.path.getsize(path) > 20000:
-                  skipped += 1
-                  continue
-              if created >= max_images:
-                  stopped_by_cap = True
-                  break
-
-              attempts = [build_prompt(sc, True), build_prompt(sc, True),
-                          build_prompt(sc, False)]
-              done = False
-              for n, p in enumerate(attempts, 1):
-                  t0 = time.time()
-                  try:
-                      raw = generate(p)
-                      if len(raw) < 20000:
-                          raise ValueError("image too small")
-                      open(path, "wb").write(raw)
-                      times.append(time.time() - t0)
-                      created += 1
-                      done = True
-                      print(f"scene {sid}: ok (try {n}, {times[-1]:.1f}s)")
-                      break
-                  except urllib.error.HTTPError as e:
-                      body = e.read().decode()[:300]
-                      print(f"scene {sid} try {n}: HTTP {e.code} {body}")
-                      errors.append(f"scene {sid}: HTTP {e.code} {body[:150]}")
-                      if e.code == 429 or "neuron" in body.lower() \
-                              or "quota" in body.lower():
-                          quota_hit = True
-                          break
-                      time.sleep(5 * n)
-                  except Exception as e:
-                      print(f"scene {sid} try {n}: {repr(e)[:200]}")
-                      errors.append(f"scene {sid}: {repr(e)[:150]}")
-                      time.sleep(5 * n)
-              if not done:
-                  failed.append(sid)
-                  if quota_hit:
-                      print("Daily quota reached, stopping.")
-                      break
-              time.sleep(1)
-
-          have = len([f for f in os.listdir(outdir) if f.endswith(".jpg")])
-          total_time = time.time() - t_start
-          avg = (sum(times) / len(times)) if times else 0
-          lines = [
-              "## Images result",
-              f"- Scenes total: {len(scenes)}",
-              f"- Images now in folder: {have} of {len(scenes)}",
-              f"- Created in this run: {created} (cap was {max_images})",
-              f"- Already existed: {skipped}",
-              f"- Failed: {len(failed)} {failed}",
-              f"- Average time per image: {avg:.1f}s",
-              f"- Daily quota reached: {'YES' if quota_hit else 'no'}",
-              f"- Stopped by cap: {'yes' if stopped_by_cap else 'no'}",
-          ]
-          if errors:
-              lines.append("- Last errors:")
-              for e in errors[-2:]:
-                  lines.append("  - " + e)
-          report = "\n".join(lines) + "\n"
-          print(report)
-          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-              f.write(report)
-
-          if failed and not quota_hit:
-              sys.exit(f"Some scenes failed: {failed}")
-          PY
-
-      - name: Save images (test only)
+      - name: Save images
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/ || true
           if ! git diff --cached --quiet; then
-            git commit -m "Add scene images (test)"
+            git commit -m "Add shot images"
             git pull --rebase || true
             git push
           fi
