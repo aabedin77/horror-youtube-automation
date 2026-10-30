@@ -1,0 +1,42 @@
+name: Test Models
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-models:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check script file is complete
+        run: |
+          if ! grep -q "END_OF_FILE_MARKER" tools/test_models.py; then
+            echo "tools/test_models.py is cut off. Paste it again completely."
+            exit 1
+          fi
+          python3 -m py_compile tools/test_models.py
+
+      - name: Generate 9 test images
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: python3 tools/test_models.py
+
+      - name: Save test images
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add test/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Add model comparison test"
+            git pull --rebase || true
+            git push
+          fi￼Enter
