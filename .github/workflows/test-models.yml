@@ -35,8 +35,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add test/ || true
-          if ! git diff --cached --quiet; then
-            git commit -m "Add model comparison test"
-            git pull --rebase || true
-            git push
-          fi￼Enter
+          git diff --cached --quiet || (git commit -m "Add model comparison test" && git pull --rebase && git push)
