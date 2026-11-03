@@ -3,148 +3,87 @@ name: Make Video
 on:
   workflow_dispatch:
     inputs:
-      limit:
-        description: "How many scenes to include (32 = full video)"
-        default: "5"
+      limit_shots:
+        description: "Use only the first N shots (15 = quick test, 0 = full video)"
+        default: "15"
+      shots_date:
+        description: "Shots file date like 2026-10-21 (empty = newest)"
+        default: ""
+      voice:
+        description: "Edge TTS voice"
+        default: "hi-IN-SwaraNeural"
+      rate:
+        description: "Speech speed, like -5% or +5%"
+        default: "-5%"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   video:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 90
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make sure ffmpeg is installed
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools and Hindi font
         run: |
-          if ! command -v ffmpeg >/dev/null 2>&1; then
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg fonts-noto-core fonts-freefont-ttf
+          if fc-list | grep -qi "Noto Sans Devanagari"; then
+            echo "FONT_NAME=Noto Sans Devanagari" >> "$GITHUB_ENV"
+          else
+            echo "FONT_NAME=FreeSans" >> "$GITHUB_ENV"
           fi
           ffmpeg -version | head -1
 
-      - name: Build video
-        env:
-          LIMIT: ${{ github.event.inputs.limit }}
+      - name: Check script files are complete
         run: |
-          python3 - <<'PY'
-          import os, json, glob, subprocess, sys, time
+          for f in tools/make_voice.py tools/make_video.py; do
+            if ! grep -q "END_OF_FILE_MARKER" "$f"; then
+              echo "$f is cut off. Paste it again completely."
+              exit 1
+            fi
+            python3 -m py_compile "$f"
+          done
 
-          t_start = time.time()
-          FPS = 25
+      - name: Make voices
+        env:
+          VOICE: ${{ github.event.inputs.voice }}
+          RATE: ${{ github.event.inputs.rate }}
+          SHOTS_DATE: ${{ github.event.inputs.shots_date }}
+          LIMIT_SHOTS: ${{ github.event.inputs.limit_shots }}
+        run: python3 tools/make_voice.py
 
-          def probe(path):
-              out = subprocess.check_output([
-                  "ffprobe", "-v", "error", "-show_entries",
-                  "format=duration", "-of", "default=nw=1:nk=1", path])
-              return float(out.decode().strip())
+      - name: Make video
+        env:
+          SHOTS_DATE: ${{ github.event.inputs.shots_date }}
+          LIMIT_SHOTS: ${{ github.event.inputs.limit_shots }}
+        run: python3 tools/make_video.py
 
-          files = sorted(glob.glob("scenes/horror-*.json"))
-          if not files:
-              sys.exit("ERROR: no scenes file")
-          data = json.load(open(files[-1], encoding="utf-8"))
-          date = data["date"]
-          scenes = data["scenes"]
-
-          try:
-              limit = int(os.environ.get("LIMIT") or 5)
-          except ValueError:
-              limit = 5
-          scenes = scenes[:max(1, limit)]
-
-          audio = f"audio/horror-{date}.mp3"
-          if not os.path.exists(audio):
-              sys.exit(f"ERROR: missing {audio}")
-
-          imgdir = f"images/{date}"
-          missing = [s["id"] for s in scenes
-                     if not os.path.exists(f"{imgdir}/scene-{s['id']:02d}.jpg")]
-          if missing:
-              sys.exit(f"ERROR: missing images for scenes {missing}")
-
-          audio_dur = probe(audio)
-          all_words = sum(s["words"] for s in data["scenes"])
-          total_video = audio_dur + 1.0
-
-          os.makedirs("work", exist_ok=True)
-          os.makedirs("out", exist_ok=True)
-          clips = []
-
-          for i, sc in enumerate(scenes):
-              dur = total_video * sc["words"] / all_words
-              frames = max(2 * FPS, round(dur * FPS))
-              dur = frames / FPS
-              d = f"{dur:.3f}"
-              n = str(frames)
-
-              if i % 2 == 0:
-                  z = "1+0.12*on/" + n
-              else:
-                  z = "1.12-0.12*on/" + n
-
-              fc = (
-                  "[0:v]split[a][b];"
-                  "[a]scale=1280:720:force_original_aspect_ratio=increase,"
-                  "crop=1280:720,gblur=sigma=30,eq=brightness=-0.05[bg];"
-                  "[b]scale=2880:2880:flags=lanczos,"
-                  f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':"
-                  "y='ih/2-(ih/zoom/2)':d=1:s=720x720:fps=" + str(FPS) + "[fg];"
-                  "[bg][fg]overlay=(W-w)/2:(H-h)/2,"
-                  f"fade=t=in:st=0:d=0.5,fade=t=out:st={dur-0.5:.3f}:d=0.5,"
-                  "format=yuv420p[v]"
-              )
-              img = f"{imgdir}/scene-{sc['id']:02d}.jpg"
-              clip = f"work/clip-{sc['id']:02d}.mp4"
-              cmd = ["ffmpeg", "-y", "-loglevel", "error",
-                     "-loop", "1", "-framerate", str(FPS), "-t", d,
-                     "-i", img, "-filter_complex", fc, "-map", "[v]",
-                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
-                     "-r", str(FPS), "-pix_fmt", "yuv420p", clip]
-              r = subprocess.run(cmd, capture_output=True, text=True)
-              if r.returncode != 0:
-                  print(r.stderr[-1500:])
-                  sys.exit(f"ERROR: ffmpeg failed on scene {sc['id']}")
-              clips.append(clip)
-              print(f"scene {sc['id']}: {dur:.1f}s done")
-
-          with open("work/list.txt", "w") as f:
-              for c in clips:
-                  f.write("file '" + os.path.basename(c) + "'\n")
-
-          out = f"out/video-{date}.mp4"
-          cmd = ["ffmpeg", "-y", "-loglevel", "error",
-                 "-f", "concat", "-safe", "0", "-i", "work/list.txt",
-                 "-i", audio, "-map", "0:v", "-map", "1:a",
-                 "-c:v", "copy", "-c:a", "aac", "-b:a", "128k",
-                 "-shortest", "-movflags", "+faststart", out]
-          r = subprocess.run(cmd, capture_output=True, text=True)
-          if r.returncode != 0:
-              print(r.stderr[-1500:])
-              sys.exit("ERROR: final mux failed")
-
-          vdur = probe(out)
-          size_mb = os.path.getsize(out) / 1024 / 1024
-          report = (
-              "## Video result\n"
-              f"- Scenes used: {len(scenes)} of {len(data['scenes'])}\n"
-              f"- Full audio length: {int(audio_dur//60)}m {int(audio_dur%60)}s\n"
-              f"- Video length: {int(vdur//60)}m {int(vdur%60)}s\n"
-              f"- File size: {size_mb:.1f} MB\n"
-              f"- Build time: {(time.time()-t_start)/60:.1f} min\n"
-              f"- Output: {out}\n"
-          )
-          print(report)
-          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-              f.write(report)
-          PY
-
-      - name: Upload video
+      - name: Upload video and previews
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: video
-          path: out/*.mp4
+          path: |
+            out/*.mp4
+            out/*.jpg
+            scenes/timing-*.json
           retention-days: 3
+
+      - name: Save timing file
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scenes/ || true
+          git diff --cached --quiet || (git commit -m "Save voice timing" && git pull --rebase && git push)
